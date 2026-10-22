@@ -1,45 +1,31 @@
 import {Box3,CanvasTexture,Group,Mesh,MeshBasicMaterial,PlaneGeometry,SRGBColorSpace,Vector3} from 'three';
 import {birthdayLabel,type PersonalContent} from './content.ts';
-
-/** Flat artwork owned by the courtyard, so the existing scene disposal covers it. */
+type Particle={x:number;y:number;vx:number;vy:number;g:number;life:number;max:number;size:number;color:string;kind:'heart'|'spark'|'emoji';glyph:string;spin:number};
+type Line={img:HTMLCanvasElement;y:number;start:number};
+const SIZE=768,UNIT=1024,S=SIZE/UNIT;
+const GOLD='#f3d29a',CREAM='#fff4ec',BLUSH='#f8e1d6';
+const PINKS=['#f4a7b9','#f7c6d3','#ef8fa6','#fbd3dc','#f2b5c4','#e8c5f0'];
+const BUNTING=['#f4a7b9','#f3d29a','#c9b3dc','#bfe0c9','#fbd3dc'];
+const EMOJI=['🌸','✨','🎈','💖','🌷','🎀'];
+const EMOJI_FONT='"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif';
+const STARS:[number,number,number][]=[[170,390,20],[858,340,24],[150,770,16],[880,720,20],[318,262,12],[712,252,14],[214,580,12],[814,560,14]];
+const smooth=(k:number)=>{k=Math.max(0,Math.min(1,k));return k*k*(3-2*k)};
+function heartPath(c:CanvasRenderingContext2D,size:number,color:string){const k=size/32;c.fillStyle=color;c.beginPath();c.moveTo(0,12*k);c.bezierCurveTo(-30*k,-6*k,-16*k,-30*k,0,-14*k);c.bezierCurveTo(16*k,-30*k,30*k,-6*k,0,12*k);c.closePath();c.fill()}
+function starPath(c:CanvasRenderingContext2D,x:number,y:number,s:number){c.beginPath();c.moveTo(x,y-s);c.quadraticCurveTo(x,y,x+s,y);c.quadraticCurveTo(x,y,x,y+s);c.quadraticCurveTo(x,y,x-s,y);c.quadraticCurveTo(x,y,x,y-s);c.fill()}
 export class ArrivalWelcome {
  readonly root=new Group();
- private elapsed=0;
- private lettering:MeshBasicMaterial;
- private stars:MeshBasicMaterial[]=[];
+ private elapsed=0;private drawTimer=0;private spawnTimer=0;private glow=0;private drewStatic=false;private reduced=false;
+ private canvas=document.createElement('canvas');private ctx:CanvasRenderingContext2D;private texture:CanvasTexture;private lettering:MeshBasicMaterial;private lines:Line[]=[];private particles:Particle[]=[];
  constructor(niche:Mesh,content:PersonalContent){
-  const canvas=document.createElement('canvas');canvas.width=canvas.height=1024;
-  const c=canvas.getContext('2d')!;c.textAlign='center';c.lineCap='round';
-  // Draw once; only material opacity changes during the short arrival animation.
-  c.strokeStyle='#e8c58f';c.lineWidth=5;
-  c.beginPath();c.moveTo(512,228);c.bezierCurveTo(355,110,362,291,512,228);c.bezierCurveTo(662,110,669,291,512,228);c.stroke();
-  c.beginPath();c.moveTo(501,235);c.quadraticCurveTo(476,292,432,311);c.moveTo(523,235);c.quadraticCurveTo(548,292,592,311);c.stroke();
-  c.fillStyle='#f8e2d7';c.beginPath();c.ellipse(512,228,13,17,0,0,Math.PI*2);c.fill();
-  c.fillStyle='#f9e9df';c.font='italic 100px Georgia';c.fillText('For you,',512,365);
-  c.font='166px Georgia';c.fillText(`${content.recipientName} ♡`,512,535,930);
-  c.fillStyle='#f2d5bf';c.font='italic 88px Georgia';c.fillText('A little world,',512,665);c.fillText('made with love.',512,758);
-  c.strokeStyle='#e8c58f';c.lineWidth=2;c.beginPath();c.moveTo(422,815);c.lineTo(602,815);c.stroke();
-  c.fillStyle='#f6dfb8';c.font='86px Georgia';c.fillText(birthdayLabel(content.birthday),512,920);
-  const texture=new CanvasTexture(canvas);texture.colorSpace=SRGBColorSpace;texture.anisotropy=4;
-  this.lettering=new MeshBasicMaterial({map:texture,transparent:true,depthWrite:false,toneMapped:false,opacity:0});
-  niche.updateWorldMatrix(true,false);const box=new Box3().setFromObject(niche),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());
-  const width=size.x*.93,geometry=new PlaneGeometry(width,width);
-  const art=new Mesh(geometry,this.lettering);art.name='Arrival welcome lettering';this.root.add(art);
-  const starCanvas=document.createElement('canvas');starCanvas.width=starCanvas.height=64;
-  const s=starCanvas.getContext('2d')!;s.fillStyle='#f4d49a';s.beginPath();
-  for(const [x,y]of [[32,1],[39,25],[63,32],[39,39],[32,63],[25,39],[1,32],[25,25]])s.lineTo(x,y);s.closePath();s.fill();
-  const starTexture=new CanvasTexture(starCanvas);starTexture.colorSpace=SRGBColorSpace;
-  const starGeometry=new PlaneGeometry(width*.065,width*.065);
-  for(const [x,y]of [[-.39,.17],[.38,.30],[.34,-.21]]){
-   const material=new MeshBasicMaterial({map:starTexture,transparent:true,depthWrite:false,toneMapped:false,opacity:0});
-   const star=new Mesh(starGeometry,material);star.position.set(x*width,y*width,.001);this.root.add(star);this.stars.push(material);
-  }
-  this.root.name='Musfira arrival welcome';this.root.position.set(center.x,center.y+.025,box.max.z+.014);
+  this.canvas.width=this.canvas.height=SIZE;this.ctx=this.canvas.getContext('2d')!;
+  const line=(text:string,font:string,color:string,y:number,start:number,maxWidth=880)=>{const img=document.createElement('canvas');img.width=UNIT;img.height=220;const c=img.getContext('2d')!;c.textAlign='center';c.textBaseline='middle';c.font=font;c.fillStyle=color;c.shadowColor='#6e3f4f88';c.shadowBlur=16;c.fillText(text,UNIT/2,110,maxWidth);this.lines.push({img,y,start})};
+  line('Happy Birthday','italic 92px Georgia',GOLD,345,.2);line(content.recipientName,'bold 156px Georgia',CREAM,488,.8,820);line('Today this whole garden','italic 58px Georgia',BLUSH,662,1.9);line('is celebrating you 🌸','italic 58px Georgia',BLUSH,732,2.3);line(`${birthdayLabel(content.birthday)} · your day ✨`,'62px Georgia',GOLD,886,3.0);
+  this.texture=new CanvasTexture(this.canvas);this.texture.colorSpace=SRGBColorSpace;this.texture.anisotropy=4;this.lettering=new MeshBasicMaterial({map:this.texture,transparent:true,depthWrite:false,toneMapped:false,opacity:0});
+  niche.updateWorldMatrix(true,false);const box=new Box3().setFromObject(niche),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3()),width=size.x*.93;const art=new Mesh(new PlaneGeometry(width,width),this.lettering);art.name='Arrival welcome lettering';this.root.add(art);this.root.name='Musfira arrival welcome';this.root.position.set(center.x,center.y+.025,box.max.z+.014);this.root.visible=false;
  }
- update(dt:number,doorOpen:boolean,reduced:boolean){
-  this.elapsed=doorOpen?Math.min(6,this.elapsed+Math.max(0,Math.min(dt,.1))):0;
-  const t=reduced?(doorOpen?1:0):Math.min(1,this.elapsed/1.1),opacity=t*t*(3-2*t);
-  this.root.visible=doorOpen;this.lettering.opacity=opacity;
-  this.stars.forEach((m,i)=>{m.opacity=opacity*(reduced||this.elapsed>=6?.82:.76+.24*Math.sin(this.elapsed*2.4+i*2.1))});
- }
+ celebrate(){if(!this.root.visible||this.reduced)return;this.glow=1;for(let i=0;i<34;i++){const a=Math.random()*Math.PI*2,v=160+Math.random()*320,heart=i%3!==0;this.particles.push({x:512,y:488,vx:Math.cos(a)*v,vy:Math.sin(a)*v-140,g:260,life:0,max:1.6+Math.random()*.8,size:heart?20+Math.random()*18:10+Math.random()*10,color:PINKS[i%PINKS.length],kind:heart?'heart':'spark',glyph:'',spin:Math.random()*6})}for(let i=0;i<5;i++)this.particles.push({x:512+(Math.random()-.5)*200,y:580,vx:(Math.random()-.5)*120,vy:-(220+Math.random()*160),g:180,life:0,max:2.2,size:50,color:'',kind:'emoji',glyph:EMOJI[i%EMOJI.length],spin:0})}
+ update(dt:number,visible:boolean,reduced:boolean,active=true){this.reduced=reduced;if(!visible){if(this.root.visible||this.elapsed>0){this.root.visible=false;this.elapsed=0;this.particles=[];this.glow=0;this.drewStatic=false;this.lettering.opacity=0}return}this.root.visible=true;const step=Math.max(0,Math.min(dt,.1));this.elapsed+=step;this.lettering.opacity=reduced?1:smooth(this.elapsed/.8);if(reduced){if(!this.drewStatic){this.draw(true);this.drewStatic=true}return}if(!active||step===0)return;this.simulate(step);this.drawTimer+=step;if(this.drawTimer<1/30)return;this.drawTimer=0;this.draw(false)}
+ private simulate(dt:number){this.spawnTimer-=dt;if(this.elapsed>1.2&&this.spawnTimer<=0){this.spawnTimer=.3+Math.random()*.3;const emoji=Math.random()<.2;this.particles.push({x:170+Math.random()*684,y:1010,vx:(Math.random()-.5)*16,vy:-(55+Math.random()*60),g:0,life:0,max:7+Math.random()*3,size:emoji?40:16+Math.random()*16,color:PINKS[(Math.random()*PINKS.length)|0],kind:emoji?'emoji':'heart',glyph:EMOJI[(Math.random()*EMOJI.length)|0],spin:Math.random()*6})}for(const p of this.particles){p.life+=dt;p.vy+=p.g*dt;p.x+=(p.vx+Math.sin(p.life*1.7+p.spin)*14)*dt;p.y+=p.vy*dt}this.particles=this.particles.filter(p=>p.life<p.max&&p.y>-80&&p.y<1100);if(this.particles.length>90)this.particles.splice(0,this.particles.length-90);this.glow=Math.max(0,this.glow-dt*1.3)}
+ private bunting(c:CanvasRenderingContext2D,t:number,still:boolean){const k=still?1:smooth(t/1.2);if(k<=0)return;const x0=322,x1=702,y0=206,cy=292,count=9;c.globalAlpha=k;c.strokeStyle='#e8c58f';c.lineWidth=3;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(512,cy,x1,y0);c.stroke();for(let i=0;i<count;i++){const u=(i+.5)/count,x=(1-u)*(1-u)*x0+2*(1-u)*u*512+u*u*x1,y=(1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y0;c.save();c.translate(x,y);c.rotate(still?0:Math.sin(t*1.8+i*.9)*.09);c.fillStyle=BUNTING[i%BUNTING.length];c.beginPath();c.moveTo(-17,0);c.lineTo(17,0);c.lineTo(0,40);c.closePath();c.fill();c.restore()}c.globalAlpha=1}
+ private draw(still:boolean){const c=this.ctx,t=still?10:this.elapsed;c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,SIZE,SIZE);c.setTransform(S,0,0,S,0,0);const glow=.2+(still?0:.06*Math.sin(t*1.6))+this.glow*.4;const g=c.createRadialGradient(512,500,30,512,500,440);g.addColorStop(0,`rgba(255,224,214,${glow.toFixed(3)})`);g.addColorStop(1,'rgba(255,224,214,0)');c.fillStyle=g;c.fillRect(0,0,UNIT,UNIT);this.bunting(c,t,still);c.fillStyle=GOLD;STARS.forEach(([x,y,s],i)=>{c.globalAlpha=still?.8:.35+.5*Math.abs(Math.sin(t*1.9+i*1.3));starPath(c,x,y,s)});c.globalAlpha=1;for(const p of this.particles){const fade=Math.max(0,Math.min(1,p.life/.4,(p.max-p.life)/1));c.globalAlpha=fade*.9;if(p.kind==='heart'){c.save();c.translate(p.x,p.y);c.rotate(Math.sin(p.life*2+p.spin)*.3);heartPath(c,p.size,p.color);c.restore()}else if(p.kind==='spark'){c.fillStyle=GOLD;starPath(c,p.x,p.y,p.size)}else{c.font=`${p.size}px ${EMOJI_FONT}`;c.textAlign='center';c.textBaseline='middle';c.fillText(p.glyph,p.x,p.y)}}c.globalAlpha=1;for(const l of this.lines){const e=still?1:smooth((t-l.start)/.9);if(e<=0)continue;c.globalAlpha=e;c.drawImage(l.img,0,l.y-110+(1-e)*26)}c.globalAlpha=1;const h=still?1:smooth((t-1.5)/.6);if(h>0){const beat=still?1:1+.14*Math.pow(Math.max(0,Math.sin(t*3.1)),8);c.save();c.globalAlpha=h;c.translate(512,580);c.scale(beat,beat);heartPath(c,34,'#f39bb0');c.restore()}const d=still?1:smooth((t-2.7)/.8);if(d>0){c.globalAlpha=d;c.strokeStyle='#e8c58f';c.lineWidth=2;c.beginPath();c.moveTo(512-110*d,812);c.lineTo(512+110*d,812);c.stroke();c.fillStyle=GOLD;starPath(c,512,812,9)}c.globalAlpha=1;this.texture.needsUpdate=true}
 }

@@ -7,8 +7,11 @@ export class Soundscape {
  private master:GainNode|null=null;private music:GainNode|null=null;private musicDuck:GainNode|null=null;private musicDuckUntil=0;private musicDuckLevel=1;private ambience:GainNode|null=null;private fx:GainNode|null=null;private room:GainNode|null=null;private garden:GainNode|null=null;private ribbon:GainNode|null=null;
  private noise:AudioBuffer|null=null;private crispNoise:AudioBuffer|null=null;private birthdayReached=false;private birthday:AudioBuffer|null=null;private birthdaySource:AudioBufferSourceNode|null=null;private sources=new Set<AudioScheduledSourceNode>();private oneShots=new Set<AudioScheduledSourceNode>();private seen=new Set<string>();private revision=0;private elapsed=0;private previousGift=0;private previousMode='journey';private nextBird=6;private disposed=false;private loading:Promise<void>|null=null;
  private applauseBuffer:AudioBuffer|null=null;private magic:AudioBuffer|null=null;private magicSource:AudioBufferSourceNode|null=null;private magicGain:GainNode|null=null;
- private content:PersonalContent;
- constructor(content:PersonalContent){this.content=content;try{this.muted=localStorage.getItem('birthday-world-sound')==='off'}catch{}}
+ private content:PersonalContent;private prefetched:Promise<(ArrayBuffer|null)[]>|null=null;
+ constructor(content:PersonalContent){this.content=content;try{this.muted=localStorage.getItem('birthday-world-sound')==='off'}catch{}
+ // Download the songs while the room is still loading, so music can start the moment she taps.
+ this.prefetched=Promise.all([content.audio.birthday,'/audio/crowd-applause.mp3','/audio/fairy-dust.mp3'].map(url=>fetch(url).then(r=>r.ok?r.arrayBuffer():null).catch(()=>null)));
+ }
  async unlock(){
   if(this.disposed)return;
   try{
@@ -21,8 +24,9 @@ export class Soundscape {
  }
  private async loadRecordings(){
   const context=this.context!;
-  const load=async(url:string)=>{const r=await fetch(url,{priority:'low'});if(!r.ok)throw Error();const data=await r.arrayBuffer();return this.disposed?null:context.decodeAudioData(data)};
-  const [birthday,applause,magic]=await Promise.allSettled([load(this.content.audio.birthday),load('/audio/crowd-applause.mp3'),load('/audio/fairy-dust.mp3')]);if(this.disposed)return;
+  const raw=await (this.prefetched??Promise.resolve([null,null,null]));
+  const decode=async(data:ArrayBuffer|null)=>{if(!data)throw Error('missing');return this.disposed?null:context.decodeAudioData(data.slice(0))};
+  const [birthday,applause,magic]=await Promise.allSettled([decode(raw[0]),decode(raw[1]),decode(raw[2])]);if(this.disposed)return;
   this.birthday=birthday.status==='fulfilled'?birthday.value:null;this.applauseBuffer=applause.status==='fulfilled'?applause.value:null;this.magic=magic.status==='fulfilled'?magic.value:null;
   if(!this.birthday)this.error='The birthday recording could not load. Other sounds and the journey remain available.';
   else if(!this.applauseBuffer||!this.magic)this.error='Some celebration sounds could not load. The birthday song and your journey still work.';
@@ -77,13 +81,21 @@ export class Soundscape {
  }
  private once(id:string,play:()=>void){if(this.seen.has(id))return;this.seen.add(id);if(this.unlocked&&!this.muted&&!this.micActive)play()}
  private chord(notes:number[],volume=.028){notes.forEach((n,i)=>this.note(n,2.8,volume,.12*i,this.music))}
+ sparkle(){if(!this.unlocked||this.muted||this.micActive)return;[1046.5,1318.51,1567.98,2093].forEach((f,i)=>this.note(f,.8,.028,i*.06))}
+ endingSoft=false;
+ setEndingSoft(soft:boolean){this.endingSoft=soft}
+ ding(i=0){if(!this.unlocked||this.muted||this.micActive)return;this.note(1046.5+i*110,.45,.03);this.note(1567.98+i*110,.35,.018,.05)}
+ blip(){if(!this.unlocked||this.muted||this.micActive)return;this.note(660+Math.random()*440,.22,.02)}
+ pop(){if(!this.unlocked||this.muted||this.micActive)return;this.noiseCue(.5,380,.14);this.crispCue(.05,2600,.05)}
+ finale(){if(!this.unlocked||this.muted||this.micActive)return;this.chord([523.25,659.25,783.99,1046.5],.03);this.applause()}
+ popper(){if(!this.unlocked||this.muted||this.micActive)return;this.crispCue(.04,3200,.09);this.noiseCue(.4,1500,.13)}
  update(j:Journey,dt:number){
   if(j.revision!==this.revision){this.reset();this.revision=j.revision}if(j.suspended)return;this.elapsed+=Math.min(dt,.25);const p=j.progress;
   const silent=['loading','error','wish','listening','extinguishing'].includes(j.phase),outside=p>=.18&&p<MARKERS.door||p>MARKERS.exit;
   this.gain(this.room,silent?0:outside?.007:.021,1);this.gain(this.garden,silent?0:outside?.085:.015,1.2);
   if(j.doorOpen&&p>=MARKERS.salonThreshold)this.birthdayReached=true;
-  const birthdayActive=this.birthdayReached&&!['loading','ready','error'].includes(j.phase);
-  this.gain(this.music,birthdayActive?.8:silent?0:.4,.15);this.gain(this.ambience,this.micActive?0:1,.08);this.gain(this.fx,this.micActive?0:1,.08);
+  const birthdayActive=!['loading','ready','error'].includes(j.phase);
+  this.gain(this.music,!birthdayActive?0:j.phase==='reading'||j.phase==='ending'&&this.endingSoft?.3:this.birthdayReached?.8:.45,j.phase==='reading'||this.endingSoft?1.2:this.birthdayReached?.15:.6);this.gain(this.ambience,this.micActive?0:1,.08);this.gain(this.fx,this.micActive?0:1,.08);
   if(p>=.15)this.once('portal',()=>{this.noiseCue(1.6,850,.12);this.note(523.25,2,.025,.35)});
   if(j.phase==='opening')this.once('entry-door',()=>this.doorCue(false));
   if(!birthdayActive)this.stopBirthday();
@@ -93,6 +105,7 @@ export class Soundscape {
   if(j.wishT>=FLAME_OUT){this.once('puff',()=>this.noiseCue(.32,850,.16));this.once('applause',()=>this.applause())}
   if(j.phase==='celebration'&&this.unlocked&&!this.muted&&!this.micActive)this.magicDust(j.celebrationT);else this.stopMagic();
   if(j.phase==='exitOpening')this.once('exit-door',()=>this.doorCue(true));
+  if(j.exitDoorT>.3)this.once('arrival-chime',()=>this.chord([523.25,659.25,783.99,1046.5],.016));
   const giftSpeed=Math.min(1,Math.abs(j.giftT-this.previousGift)/Math.max(dt,.016)*3);this.previousGift=j.giftT;this.gain(this.ribbon,j.phase==='gift'?giftSpeed*.09:0,.1);
   if(j.giftOpened)this.once('gift',()=>this.chord([392,493.88,587.33],.023));
   if(j.mode!==this.previousMode&&['portrait','receivedCard'].includes(j.mode))this.noiseCue(.35,1800,.14);this.previousMode=j.mode;

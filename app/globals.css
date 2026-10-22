@@ -96,3 +96,184 @@
 @media(max-height:500px) and (min-aspect-ratio:1/1){
  .wish-panel{left:auto;right:12px;transform:none;width:min(360px,46%);max-height:calc(100% - 86px)}
 }
+
+/* Landing: birthday-first copy and surprise button. */
+.birthday-eyebrow{display:block;margin-top:18px;color:#ffe2d7;text-transform:uppercase}
+.invitation--ready h1{margin:10px 0 14px}
+.invite-line{margin:0 0 26px;font:italic 18px/1.5 Georgia,serif!important}
+.open-surprise{border-radius:999px;padding:15px 28px;font-size:16px;animation:surprise-glow 2.4s ease-in-out infinite}
+.open-surprise:hover{transform:translateY(-1px)}
+.sound-note{font-size:13px!important;margin:12px 0 0;opacity:.9}
+@keyframes surprise-glow{0%,100%{box-shadow:0 8px 30px #f1b8c955}50%{box-shadow:0 8px 42px #f6c6d4aa}}
+
+/* Confetti. */
+.confetti-layer{position:fixed;inset:0;pointer-events:none;z-index:50;overflow:hidden}
+.confetti-layer i{position:absolute;width:8px;height:12px;border-radius:2px;opacity:0;animation:confetti-fly 1.6s cubic-bezier(.15,.7,.35,1) forwards}
+@keyframes confetti-fly{0%{opacity:1;transform:translate(-50%,-50%) rotate(0)}70%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy) + 220px)) rotate(var(--r))}}
+
+/* Tappable landing balloons. */
+.landing-balloons{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.landing-balloon{position:absolute;bottom:-160px;border:0;padding:0;border-radius:50% 50% 48% 48%;background:radial-gradient(circle at 32% 28%,#ffffffcc 0 8%,transparent 9%),var(--balloon);box-shadow:inset -8px -10px 18px #00000014;pointer-events:auto;cursor:pointer;opacity:.92;animation:balloon-rise linear infinite}
+.landing-balloon::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:70px;background:#ffffff99;transform:translateX(-50%)}
+@keyframes balloon-rise{0%{transform:translateY(0) translateX(0) rotate(-3deg)}50%{transform:translateY(-60vh) translateX(18px) rotate(3deg)}100%{transform:translateY(-125vh) translateX(-6px) rotate(-2deg)}}
+
+/* Welcome card and scroll tutorial after entering. */
+.intro-welcome{position:absolute;left:50%;top:16%;transform:translateX(-50%);width:min(560px,90%);text-align:center;padding:22px 24px 24px;border-radius:24px;background:radial-gradient(ellipse at top,#f7e0e2ee,#fff6e9f2);color:#6b4450;box-shadow:0 18px 60px #2c181a40;border:1px solid #f3cfce;text-shadow:none;animation:intro-pop .6s cubic-bezier(.2,1.4,.4,1) both,intro-out .5s ease-in 2.9s forwards}
+.intro-welcome .birthday-companion{justify-content:center}
+.intro-welcome h2{font:400 clamp(26px,3.4vw,38px)/1.2 Georgia,serif;margin:10px 0 8px;color:#80545f}
+.intro-welcome p{font:italic 16px/1.5 Georgia,serif;margin:0}
+.intro-hint{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 26px;border-radius:22px;background:#3e2c32cc;border:1px solid #f5dcc455;text-align:center;animation:intro-pop .5s ease-out both}
+.intro-hint p{margin:0;font:italic 21px/1.3 Georgia,serif}
+.hint-sub{font-size:12px;opacity:.85}
+.hint-hand{font-size:38px;display:block;animation:hint-swipe 1.6s ease-in-out infinite}
+.hint-mouse{width:26px;height:40px;border:2px solid #fff3e5;border-radius:14px;position:relative;display:block}
+.hint-mouse i{position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff3e5;animation:hint-wheel 1.4s ease-in-out infinite}
+@keyframes intro-pop{from{opacity:0;transform:translate(-50%,14px) scale(.96)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
+@keyframes intro-out{to{opacity:0;transform:translate(-50%,-10px)}}
+@keyframes hint-swipe{0%{transform:translateY(18px);opacity:0}25%{opacity:1}70%{transform:translateY(-22px);opacity:1}100%{transform:translateY(-30px);opacity:0}}
+@keyframes hint-wheel{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+
+/* Quiet, hold-to-walk travel controls. */
+.travel-controls--soft{gap:12px;width:auto;animation:controls-in .6s ease-out both}
+.travel-controls--soft .travel-button{touch-action:none;user-select:none;-webkit-user-select:none}
+.travel-controls--soft .travel-back{min-width:44px!important;width:44px;padding:0!important;opacity:.75}
+.travel-controls--soft .travel-back svg,.travel-controls--soft .travel-forward svg{flex:0 0 auto}
+.travel-controls--soft .travel-forward{background:#3e2c32b3;border-color:#f5dcc480;padding:10px 16px!important;min-width:132px!important;height:48px;justify-content:center;gap:10px}
+.travel-controls--soft .travel-forward:active{background:#5c3947e6;transform:scale(.97)}
+.travel-controls--soft .travel-instruction{max-width:220px}
+@keyframes controls-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+@container(max-width:650px){.travel-controls--soft{width:calc(100% - 28px);gap:10px}.travel-controls--soft .travel-forward{flex:1 1 auto;min-width:0!important;max-width:150px}.travel-controls--soft .travel-back{flex:0 0 48px;max-width:48px}.intro-welcome{top:12%}.intro-hint{bottom:12%}}
+
+@media(prefers-reduced-motion:reduce){.open-surprise,.intro-welcome,.intro-hint,.hint-hand,.hint-mouse i,.travel-controls--soft{animation:none}.landing-balloons{display:none}}
+
+/* Courtyard arrival: interactive "send some love" moment. */
+.arrival-prompt{bottom:15%;display:flex;flex-direction:column;align-items:center;gap:10px}
+.arrival-prompt .birthday-companion{justify-content:center}
+.arrival-love{border-radius:999px;padding:12px 22px;animation:surprise-glow 2.4s ease-in-out infinite}
+.arrival-love:active{transform:scale(.96)}
+.arrival-tip{margin:0;font-size:12px;opacity:.85}
+@container(max-width:650px){.arrival-prompt{bottom:120px}}
+@media(prefers-reduced-motion:reduce){.arrival-love{animation:none}}
+
+/* Letter: envelope, live writing, hug moment. */
+.moment .letter-stage{pointer-events:auto}
+.letter-stage{position:absolute;inset:0;z-index:5;display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));background:radial-gradient(ellipse at 50% 45%,#3a222c66,#1c1016cc);outline:none;overflow:hidden;animation:letter-stage-in .8s ease both}
+@keyframes letter-stage-in{from{opacity:0}to{opacity:1}}
+.letter-petals{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.letter-petals span{position:absolute;top:-30px;width:14px;height:11px;border-radius:70% 0 70% 0;background:linear-gradient(135deg,#f7c6d3,#ef9fb0);opacity:.75;animation:petal-fall linear infinite}
+@keyframes petal-fall{0%{transform:translate(0,0) rotate(0)}50%{transform:translate(40px,55vh) rotate(200deg)}100%{transform:translate(-10px,110vh) rotate(400deg)}}
+.envelope-wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.envelope{position:relative;width:min(360px,80vw);aspect-ratio:3/2;border:0;padding:0;background:none;cursor:pointer;perspective:900px;animation:envelope-float 3s ease-in-out infinite;filter:drop-shadow(0 18px 40px #1a0c1266)}
+.envelope:disabled{cursor:default;animation:none}
+.envelope>span{position:absolute;display:block}
+.envelope-back{inset:0;border-radius:10px;background:#e9c3c0}
+.envelope-paper{left:7%;right:7%;top:8%;height:80%;border-radius:6px;background:#fff7ee;color:#8a5a66;font:28px/1.2 Georgia,serif;display:grid;place-items:center;padding-bottom:30%;z-index:1;transition:transform 1s cubic-bezier(.2,.8,.2,1) .45s}
+.envelope-paper em{font-size:.7em;margin-right:6px}
+.envelope-front{inset:0;border-radius:10px;background:linear-gradient(160deg,#f7e2dc,#f1d2cd);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);z-index:2}
+.envelope-flap{left:0;right:0;top:0;height:62%;background:linear-gradient(180deg,#ecc7c3,#e3b5b2);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top center;transition:transform .7s ease;z-index:3}
+.envelope-seal{left:50%;top:62%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d07a8f,#9e3f58);color:#f8e2b8;font:600 26px/58px Georgia,serif;box-shadow:0 3px 10px #5a1f3077,inset 0 0 0 4px #b6566f;z-index:4;transition:transform .5s ease,opacity .5s ease;animation:seal-pulse 1.8s ease-in-out infinite}
+.envelope-hint{margin:0;font:italic 19px/1.4 Georgia,serif;color:#fff1e6;text-shadow:0 2px 12px #1c0e14}
+.letter-stage[data-stage="opening"] .envelope-seal{transform:scale(1.4) rotate(25deg);opacity:0;animation:none}
+.letter-stage[data-stage="opening"] .envelope-flap{transform:rotateX(180deg);z-index:0}
+.letter-stage[data-stage="opening"] .envelope-paper{transform:translateY(-48%)}
+@keyframes envelope-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+@keyframes seal-pulse{0%,100%{box-shadow:0 3px 10px #5a1f3077,inset 0 0 0 4px #b6566f,0 0 0 0 #f7c6d366}50%{box-shadow:0 3px 10px #5a1f3077,inset 0 0 0 4px #b6566f,0 0 0 12px #f7c6d300}}
+.letter-stage .letter-panel{position:relative;inset:auto;width:min(600px,100%);max-height:min(86dvh,880px);margin:0;overscroll-behavior:contain;box-shadow:0 16px 60px #2c181a40,inset 0 0 0 10px #fff5e9,inset 0 0 0 11px #dcbf9d80;animation:letter-unfold .9s cubic-bezier(.2,.9,.25,1) both}
+.letter-stage .letter-panel:before{display:none}
+@keyframes letter-unfold{from{opacity:0;transform:translateY(40px) scale(.94)}to{opacity:1;transform:none}}
+.letter-line{margin:0 0 1em}
+.letter-line.is-writing{-webkit-mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 55%,transparent 100%);-webkit-mask-size:100% 220%;mask-size:100% 220%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:ink-write var(--write,1500ms) ease-out both}
+@keyframes ink-write{from{-webkit-mask-position:0 100%;mask-position:0 100%}to{-webkit-mask-position:0 0;mask-position:0 0}}
+.hug-moment{display:flex;flex-direction:column;align-items:center;gap:10px;margin:4px 0 18px;animation:hug-pop .7s cubic-bezier(.2,1.5,.4,1) both}
+.hug-moment .letter-hug-sticker{margin:0}
+.hug-button{border-radius:999px;font-size:15px;padding:12px 22px;background:#f7c6d3;color:#6b3346;border-color:#f7c6d3;animation:surprise-glow 2.2s ease-in-out infinite}
+.hug-done{margin:0!important;font:600 15px/1.4 Arial,sans-serif!important;color:#a0526a;animation:hug-pop .6s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes hug-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.letter-signature{font:italic 26px/1.4 "Segoe Script","Brush Script MT","Snell Roundhand",cursive!important;color:#976375;margin:10px 0 0}
+.letter-signature.is-signing{animation:sign-write 1.6s ease-in-out both}
+@keyframes sign-write{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.letter-continue{display:flex;animation:letter-fade .6s ease both}
+@keyframes letter-fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.letter-skip{display:block;margin:6px auto 0;background:none;border:0;color:#a07580;font:12px Arial,sans-serif;text-decoration:underline;cursor:pointer;padding:8px}
+.hearts-layer{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden}
+.hearts-layer span{position:absolute;bottom:-50px;opacity:0;animation:heart-rise linear forwards}
+@keyframes heart-rise{0%{opacity:0;transform:translate(0,0) scale(.6)}10%{opacity:1}100%{opacity:0;transform:translate(var(--drift),-110vh) scale(1.1)}}
+@container(max-width:650px){.envelope-paper{font-size:22px}.envelope-hint{font-size:17px;max-width:280px}.letter-stage .letter-panel{width:100%;left:auto;right:auto;top:auto;max-height:calc(100dvh - 32px)}}
+@media(prefers-reduced-motion:reduce){.letter-stage,.envelope,.envelope-seal,.letter-stage .letter-panel,.hug-moment,.hug-button,.hug-done,.letter-continue,.letter-line.is-writing,.letter-signature.is-signing{animation:none}.letter-line.is-writing{-webkit-mask-image:none;mask-image:none}}
+
+/* Letter closes and flies away. */
+.letter-stage[data-stage="closing"] .envelope{animation:envelope-away 1.9s cubic-bezier(.5,0,.3,1) both}
+.letter-stage[data-stage="closing"] .envelope-seal{animation:none;font-size:30px}
+@keyframes envelope-away{0%{opacity:0;transform:scale(.85)}22%{opacity:1;transform:scale(1)}55%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(-75vh) rotate(-10deg) scale(.6)}}
+
+/* Ending: achievements, hold-to-release finale, and goodbye card. */
+.moment .ending-stage{pointer-events:auto}
+.ending-stage{position:absolute;inset:0;z-index:4;overflow:hidden}
+.ending-stage[data-stage="achievements"],.ending-stage[data-stage="finale"]{background:linear-gradient(180deg,transparent 35%,#2a1a2288)}
+.finale-balloons{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.finale-balloon{position:absolute;bottom:-140px;border-radius:50% 50% 48% 48%;background:radial-gradient(circle at 32% 28%,#ffffffcc 0 8%,transparent 9%),var(--balloon);box-shadow:inset -8px -10px 18px #00000014;animation:finale-rise ease-in forwards}
+.finale-balloon::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:60px;background:#ffffff99}
+@keyframes finale-rise{0%{transform:translateY(0) rotate(-4deg)}50%{transform:translate(14px,-60vh) rotate(4deg)}100%{transform:translate(-8px,-125vh) rotate(-2deg)}}
+.achievements{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,90%);display:flex;flex-direction:column;gap:10px;z-index:3;text-shadow:none}
+.achievements-title{margin:0 0 4px;text-align:center;font:600 12px/1.4 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#ffe2d7}
+.achievements ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.achievement{display:flex;align-items:center;gap:12px;padding:11px 16px;border-radius:14px;background:#fff6eef2;color:#6b4450;font:15px/1.35 Georgia,serif;box-shadow:0 8px 26px #1c0e1440;animation:achievement-in .55s cubic-bezier(.2,1.4,.4,1) both}
+.achievement-icon{font-size:22px;flex-shrink:0}.achievement--trophy{justify-content:center;font:600 19px/1.3 Georgia,serif;background:linear-gradient(135deg,#f9d77e,#f6b8c6);color:#5a2f3c;margin-top:4px;padding:14px 18px}.achievements-skip{align-self:center;font-size:12px;color:#ffe9e0}
+@keyframes achievement-in{from{opacity:0;transform:translateX(-30px) scale(.95)}to{opacity:1;transform:none}}
+.finale-prompt{bottom:16%;display:flex;flex-direction:column;align-items:center;gap:14px;z-index:3}.finale-prompt .birthday-companion{justify-content:center}.hold-button{border-radius:999px;padding:16px 28px;font-size:16px;touch-action:none;user-select:none;-webkit-user-select:none;animation:surprise-glow 2s ease-in-out infinite}.hold-button.is-holding{transform:scale(1.06);background:#fff5e8}
+.goodbye{z-index:3}.ending-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding:26px 24px 20px;border-radius:24px;background:radial-gradient(ellipse at top,#f7e0e2f2,#fff6e9f7);color:#6b4450;text-shadow:none;box-shadow:0 18px 60px #1c0e1466;border:1px solid #f3cfce;animation:hug-pop .7s cubic-bezier(.2,1.4,.4,1) both}.ending-card .eyebrow{color:#a06f7c}.ending-card h2{font:400 clamp(28px,4vw,40px)/1.2 Georgia,serif!important;margin:0!important;color:#80545f}.ending-card>p{margin:0;font:italic 16px/1.5 Georgia,serif}.ending-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}.ending-actions .primary-button,.ending-actions .secondary-button{border-radius:999px;text-decoration:none}.ending-actions .secondary-button{background:#80545f;border-color:#80545f}.ending-replay{font-size:13px;color:#8a5a66}.ending-ps{margin:6px 0 0;font:italic 14px/1.4 Georgia,serif;color:#9a6672;animation:letter-fade .8s ease both}
+@container(max-width:650px){.achievement{font-size:14px;padding:10px 13px}.finale-prompt{bottom:18%}.ending-card{padding:22px 16px 16px}.ending-actions{flex-direction:column;width:100%}}
+@media(prefers-reduced-motion:reduce){.finale-balloon,.achievement,.hold-button,.ending-card,.ending-ps,.letter-stage[data-stage="closing"] .envelope{animation:none}}
+
+/* Travel controls: one consistent, readable style. */
+.travel-controls--soft{gap:10px;align-items:center}
+.travel-controls--soft .icon-button{width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;padding:0!important;border-radius:50%!important;background:#3e2c32e0!important;border:1px solid #f5dcc480!important;color:#fff3e5!important;opacity:1!important;box-shadow:0 6px 20px #1c0e1440}
+.travel-controls--soft .travel-forward{width:auto!important;border-radius:24px!important;padding:0 20px!important;gap:8px;background:#5c3947f0!important}
+.travel-controls--soft .icon-button:hover{background:#6b4553f0!important}
+.travel-controls--soft .icon-button:disabled{opacity:.45!important}
+.travel-controls--soft .travel-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;line-height:0!important}
+.travel-controls--soft .travel-button svg{display:block!important;flex:0 0 auto!important}
+
+/* Ending v2: power button, tiered blast, goodbye card. */
+.ending-stage::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(circle at 50% 75%,#ffc9da,transparent 60%);opacity:calc(var(--charge,0)*.6);transition:opacity .35s ease}
+.confetti-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:6}
+.anim-emoji{display:inline-grid;place-items:center;line-height:1;object-fit:contain;user-select:none}
+
+.finale-prompt{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:min(460px,92%);display:flex;flex-direction:column;align-items:center;gap:10px;z-index:3;text-align:center}
+.finale-prompt .birthday-companion{justify-content:center}
+.power-button{position:relative;width:140px;height:140px;border-radius:50%;border:0;padding:0;display:grid;place-items:center;cursor:pointer;background:radial-gradient(circle at 50% 40%,#fff6ee,#f6c7d3);box-shadow:0 10px 40px #f1b8c966,0 0 0 6px #ffffff22;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;transition:transform .2s ease,box-shadow .2s ease;animation:power-idle 1.8s ease-in-out infinite}
+.power-button.is-holding{animation:power-shake .12s linear infinite;box-shadow:0 10px 60px #f6a7bd,0 0 0 10px #ffd6e266}
+.power-button[data-tier="3"],.power-button[data-tier="4"]{transform:scale(1.08)}
+.power-button[data-tier="5"]{transform:scale(1.14)}
+.power-ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);pointer-events:none}
+.power-ring__track{fill:none;stroke:#ffffff66;stroke-width:8}
+.power-ring__fill{fill:none;stroke:#e46f93;stroke-width:8;stroke-linecap:round;transition:stroke .3s}
+.power-button[data-tier="4"] .power-ring__fill,.power-button[data-tier="5"] .power-ring__fill{stroke:#f2b84b}
+.power-emoji{position:relative;pointer-events:none}
+.power-label{margin:4px 0 0;font:600 20px/1.3 Georgia,serif;color:#fff3e5;text-shadow:0 2px 14px #1c0e14}
+.power-steps{display:flex;gap:6px}
+.power-steps span{width:30px;height:6px;border-radius:3px;background:#ffffff40;transition:background .25s,transform .25s}
+.power-steps span.is-on{background:#f6b8c6;transform:scaleY(1.4)}
+.power-steps span.is-on:nth-child(4),.power-steps span.is-on:nth-child(5){background:#f2c66d}
+.power-hint{margin:0;font-size:13px;opacity:.85}
+@keyframes power-idle{0%,100%{scale:1}50%{scale:1.04}}
+@keyframes power-shake{0%{translate:0 0}25%{translate:1px -1px}50%{translate:-1px 1px}75%{translate:1px 1px}100%{translate:0 0}}
+
+.blast{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:4;width:min(640px,94%);text-align:center}
+.blast-emojis{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.blast-emoji{animation:blast-pop .7s cubic-bezier(.2,1.6,.4,1) both}
+.blast-emoji:nth-child(2){animation-delay:.12s}.blast-emoji:nth-child(3){animation-delay:.24s}.blast-emoji:nth-child(4){animation-delay:.36s}.blast-emoji:nth-child(5){animation-delay:.48s}
+.blast-title{margin:14px 0 4px;font:700 clamp(26px,5vw,44px)/1.15 Georgia,serif;color:#fff3e5;text-shadow:0 4px 24px #a3405f;animation:blast-pop .6s .2s cubic-bezier(.2,1.6,.4,1) both}
+.blast-power{margin:0;font:600 15px/1.4 Arial,sans-serif;color:#ffe2d7;animation:letter-fade .6s .5s ease both}
+.blast-flash{position:absolute;inset:0;z-index:7;background:#fff2f6;pointer-events:none;animation:blast-flash .26s ease-out forwards}
+@keyframes blast-pop{from{opacity:0;transform:scale(.3) translateY(30px)}to{opacity:1;transform:none}}
+@keyframes blast-flash{from{opacity:.6}to{opacity:0}}
+
+.bye-wrap{position:absolute;inset:0;z-index:4;display:grid;place-items:center;padding:16px}
+.bye-card{width:min(480px,100%);display:flex;flex-direction:column;align-items:center;gap:8px;padding:24px 22px 18px;border-radius:26px;background:radial-gradient(ellipse at top,#f7e0e2f5,#fff6e9fa);color:#6b4450;text-align:center;text-shadow:none;box-shadow:0 18px 60px #1c0e1466;border:1px solid #f3cfce;animation:hug-pop .7s cubic-bezier(.2,1.4,.4,1) both}
+.bye-card h2{margin:0;font:400 clamp(26px,4vw,36px)/1.2 Georgia,serif;color:#80545f}
+.bye-sub{margin:0;font:italic 16px/1.5 Georgia,serif}
+.bye-meta{margin:0;font:12px/1.4 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#a06f7c}
+
+@container(max-width:650px){.power-button{width:124px;height:124px}.power-label{font-size:18px}.finale-prompt{bottom:5%}.bye-card .ending-actions{flex-direction:column;width:100%}}
+@media(prefers-reduced-motion:reduce){.power-button,.power-button.is-holding,.blast-emoji,.blast-title,.blast-power,.blast-flash,.bye-card{animation:none}}
