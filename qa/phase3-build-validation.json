@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "indexHTML": true,
+  "copiedPublicFiles": 40,
+  "publicBytes": 68701498,
+  "localEntryReferences": [
+    "/_next/static/css/index.C5B4kfIi.css",
+    "/_next/static/css/index.C5B4kfIi.css",
+    "/_next/static/chunks/index-DEBw1b82.js",
+    "/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+    "/_next/static/chunks/framework-D_rUT4EX.js",
+    "/_next/static/chunks/layout-segment-context-B9wEN9df.js",
+    "/_next/static/chunks/BirthdayExperience-DNK2yXsZ.js",
+    "/_next/static/chunks/BirthdayDate-DvlmvbCn.js",
+    "/_next/static/chunks/content-OKdG6Xxm.js",
+    "/_next/static/chunks/journey-CoykNEOF.js",
+    "/favicon.svg",
+    "/favicon.svg",
+    "/_next/static/chunks/index-DEBw1b82.js",
+    "/_next/static/chunks/index-DEBw1b82.js"
+  ],
+  "browserRenderingValidated": false
+}

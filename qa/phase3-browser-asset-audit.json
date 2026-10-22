@@ -1,0 +1,179 @@
+[
+  {
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "viewport": [
+        1363,
+        936
+      ],
+      "devicePixelRatio": 1,
+      "webglRendererCreated": false
+    }
+  },
+  {
+    "asset": "bedroom",
+    "loadMs": 343,
+    "textures": 177,
+    "meshes": 68,
+    "slots": [
+      "bedroomPhotos.0",
+      "portalGardenPreview",
+      "bedroomPhotos.1"
+    ],
+    "bedroomTeddyParts": 0,
+    "portalOriginOffsetMetres": 0,
+    "portalAlignment": 1,
+    "indirect": {
+      "materialLeaks": 0,
+      "bytes": 1903935,
+      "width": 1024,
+      "height": 1024,
+      "max": 3.98828125,
+      "receivers": 3
+    },
+    "photoWarnings": [],
+    "photographsApplied": true
+  },
+  {
+    "asset": "garden",
+    "loadMs": 172,
+    "textures": 355,
+    "meshes": 168,
+    "slots": []
+  },
+  {
+    "asset": "door",
+    "loadMs": 214,
+    "textures": 79,
+    "meshes": 29,
+    "slots": [],
+    "clip": "EntryDoor.Open",
+    "pivots": [
+      {
+        "source": "DOOR • inward hinge",
+        "angle": 101.99973751178021
+      }
+    ]
+  },
+  {
+    "asset": "salon",
+    "loadMs": 308,
+    "textures": 194,
+    "meshes": 92,
+    "slots": [],
+    "indirect": {
+      "materialLeaks": 0,
+      "bytes": 1820425,
+      "width": 1024,
+      "height": 1024,
+      "max": 7.82421875,
+      "receivers": 5
+    }
+  },
+  {
+    "asset": "cake",
+    "loadMs": 59,
+    "textures": 8,
+    "meshes": 7,
+    "slots": [],
+    "visibleInDoorComposition": true
+  },
+  {
+    "asset": "flames",
+    "loadMs": 2,
+    "textures": 0,
+    "meshes": 9,
+    "slots": []
+  },
+  {
+    "asset": "exit-door",
+    "loadMs": 60,
+    "textures": 216,
+    "meshes": 114,
+    "slots": [],
+    "clip": "ExitDoor.Open",
+    "pivots": [
+      {
+        "source": "Hero French leaf • left",
+        "angle": 70.00095006649265
+      },
+      {
+        "source": "Hero French leaf • right",
+        "angle": 70.00095006649265
+      }
+    ]
+  },
+  {
+    "asset": "courtyard",
+    "loadMs": 125,
+    "textures": 52,
+    "meshes": 18,
+    "slots": [
+      "heroPortrait",
+      "receivedCard"
+    ],
+    "indirect": {
+      "materialLeaks": 0,
+      "bytes": 2505281,
+      "width": 1024,
+      "height": 1024,
+      "max": 7.12109375,
+      "receivers": 3
+    },
+    "photoWarnings": [],
+    "photographsApplied": true
+  },
+  {
+    "asset": "gift",
+    "loadMs": 226,
+    "textures": 192,
+    "meshes": 51,
+    "slots": [
+      "gift.tag"
+    ],
+    "clip": "Gift.Unwrap",
+    "pivots": [
+      {
+        "source": "P2.Gift.Lid",
+        "angle": 112.29955171548399
+      },
+      {
+        "source": "P2.Gift.FrontFlap",
+        "angle": 93.39139964049244
+      }
+    ],
+    "giftTeddyPreserved": true
+  },
+  {
+    "asset": "ending",
+    "loadMs": 65,
+    "textures": 10,
+    "meshes": 10,
+    "slots": [],
+    "indirect": {
+      "materialLeaks": 0,
+      "bytes": 751147,
+      "width": 512,
+      "height": 512,
+      "max": 2.806640625,
+      "receivers": 1
+    },
+    "letterFound": true,
+    "woodMaps": 1
+  },
+  {
+    "pipeline": {
+      "elapsedMs": 2527,
+      "decoderWorkers": 2,
+      "longTasks": 8,
+      "longestTaskMs": 274,
+      "gpuPreparationMeasured": false,
+      "texturePool": {
+        "uniqueEmbeddedImages": 163,
+        "decodedImageMiB": 295,
+        "duplicateImageMiBSaved": 114,
+        "gpuMemoryMeasured": false
+      }
+    }
+  }
+]

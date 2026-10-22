@@ -1,0 +1,16 @@
+{
+  "scope": "Isolated production Canvas celebration. No 3D rendering and no audio.",
+  "browser": "Cloud Chrome 151, foreground tab, 1150x650",
+  "webm": {
+    "frames": 326,
+    "bytes": 9876586
+  },
+  "mp4": {
+    "frames": 329,
+    "fps": 30,
+    "durationSeconds": 10.966667,
+    "bytes": 9158309,
+    "conversion": "ffmpeg fps=30 libx264 CRF20; converted actual browser recording"
+  },
+  "visualReview": "Date/name typography and surrounding dust inspected on desktop/mobile; diagonal dust artifact corrected."
+}

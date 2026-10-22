@@ -1,0 +1,8 @@
+Use case: photorealistic-natural
+Asset type: seamless square photorealistic albedo texture tile for actual 3D terrain.
+Primary request: A flat repeatable surface texture of believable short Mediterranean garden grass and dry meadow, viewed orthographically straight down, with complete close surface coverage.
+Subject/material: short fine olive-green and sage grass, some fine golden straw blades, and small scattered glimpses of natural earth. Restrained natural colors and authentic fine grass texture.
+Composition/framing: square 1024 by 1024 or comparable resolution; strictly top-down orthographic view, uniform scale and surface coverage edge-to-edge; continuous seamless matching edges for repetition in both directions; no scene composition, no focal object, no borders.
+Lighting: evenly diffuse overcast illumination appropriate for an albedo/base-color texture; no baked directional shadows, no sun patches, no ambient occlusion dark pockets, no highlights, no gradient lighting.
+Color palette: restrained sage, olive green, muted golden straw, subtle earthy brown; avoid neon or saturated green.
+Constraints: no horizon, no flowers, no rocks, no text, no watermark, no thick clover leaves, no tall grass, no exaggerated clumps; a flat terrain texture, not a scenic landscape photograph.

@@ -1,0 +1,58 @@
+{
+  "status": "3d-browser-acceptance-blocked",
+  "date": "2026-09-14",
+  "environment": "Cloud Chrome on internal Sites supervised preview",
+  "webgl": {
+    "available": false,
+    "reportedVendor": "Disabled",
+    "reportedRenderer": "Disabled",
+    "error": "Could not create a WebGL context; BindToCurrentSequence failed",
+    "defaultPowerFallback": "Also failed"
+  },
+  "normalRoute": "Shows intentional recovery UI",
+  "uiFixture": {
+    "renderer": "none \u2014 explicitly labeled UI-only",
+    "begin": "passed",
+    "doorGateProgress": 0.32,
+    "repeatedForwardAtClosedDoor": "held at 0.32",
+    "doorOpeningTimedPhase": "passed",
+    "doorReleaseNoAccumulatedJump": "held at 0.32 after opening",
+    "wishGateProgress": 0.56,
+    "simulatedPermissionDenial": "message shown; tap remained available",
+    "actualInsecureContextOrUnavailableMicrophone": "message shown; tap remained available",
+    "tapWish": "entered extinguishing phase",
+    "extinctionStateAfterDelay": true,
+    "reversePreservesExtinction": true,
+    "letterReadingHoldProgress": 0.96,
+    "letterContinue": "passed",
+    "ending": "passed",
+    "replay": {
+      "progress": 0,
+      "doorOpen": false,
+      "extinguished": false
+    }
+  },
+  "webmcp": "Unavailable: browser reports document.modelContext unavailable. Feature-detected registration retained in source.",
+  "notVerified": [
+    "3D rendering",
+    "visual match to Blender",
+    "portal alignment",
+    "door mesh swing and collision",
+    "camera clearance",
+    "actual flame/smoke appearance",
+    "portrait occlusion",
+    "live microphone blowing",
+    "3D mobile performance",
+    "six-scene browser screenshots",
+    "browser walkthrough video"
+  ],
+  "fps": null,
+  "cold3DLoadTime": null,
+  "mobileViewport": {
+    "width": 390,
+    "height": 844,
+    "type": "CSS iframe emulation, not a real mobile device",
+    "UIlayout": "Begin controls inspected",
+    "actual3D": "WebGL failure confirmed"
+  }
+}

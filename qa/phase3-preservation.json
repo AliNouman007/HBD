@@ -1,0 +1,48 @@
+[
+  {
+    "file": "birthday-world-phase2-world-final.blend",
+    "sha256": "ef9776f209b4b7002cd053a62d8309a11d53f5756cddace6371ca9a2de3c94eb",
+    "unchanged": true
+  },
+  {
+    "file": "birthday-world-phase2-web-final.blend",
+    "sha256": "0587c4112d28ef33ea37fd29d9c4beab01597a62575ad994bf9d3505f90d87a6",
+    "unchanged": true
+  },
+  {
+    "file": "garden.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "door.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "salon.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "cake.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "flames.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "exit-door.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "courtyard.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "gift.glb",
+    "sameAsPhase2": true
+  },
+  {
+    "file": "ending.glb",
+    "sameAsPhase2": true
+  }
+]

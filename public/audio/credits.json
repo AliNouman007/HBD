@@ -1,0 +1,42 @@
+{
+  "recording": {
+    "title": "Happy Birthday — complete piano-style instrumental",
+    "creator": "Created for Birthday World",
+    "source": "Original local instrumental arrangement and synthesis of the familiar Happy Birthday melody. No voice or downloaded recording is used.",
+    "changes": "Complete 24-beat melody with soft accompaniment and a short stereo room tail; loudness normalization and MP3 encoding. Begins at birthday-room entry and repeats through the ending until replay.",
+    "file": "/audio/happy-birthday.mp3",
+    "durationSeconds": 25.861224,
+    "sha256": "4c5049625b5e047a3ddabd4a0d7d36c591a459adab86f751372472ba23732ce4",
+    "reviewStatus": "Full score and media decoding verified. Speaker listening is left to the user."
+  },
+  "soundDesign": {
+    "creator": "Original synthesis for Birthday World",
+    "description": "Room/breeze beds, sparse birdlike tones, ribbon/paper movement, layered door latch/wood/settle effects, candle puff and warm harmonic cues are generated locally by audio.ts. Applause and fairy-dust shimmer use the separately credited recordings below."
+  },
+  "effects": [
+    {
+      "title": "Small applause",
+      "creator": "Breviceps",
+      "source": "https://freesound.org/people/Breviceps/sounds/462362/",
+      "license": "CC0 1.0 Universal",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "/audio/crowd-applause.mp3",
+      "changes": "Light compression and peak limiting for audibility, short entrance and closing fades; stereo MP3 encoding.",
+      "decodedDurationSeconds": 4.486,
+      "bytes": 90951,
+      "sha256": "4ee026648199e5ba408127af31a52eaaaa6d8fa2e5fd3adc7ee773e2f2835e5a"
+    },
+    {
+      "title": "Magic Wand Glitter",
+      "creator": "qubodup",
+      "source": "https://freesound.org/people/qubodup/sounds/211624/",
+      "license": "CC0 1.0 Universal",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "/audio/fairy-dust.mp3",
+      "changes": "Natural recorded chime variants overlapped into a continuous 11-second shimmer with 60ms edge fades. Playback volume follows the particle animation; no third-party request is needed at runtime.",
+      "decodedDurationSeconds": 11,
+      "bytes": 265581,
+      "sha256": "c87abd7cf31dc4fc4bcad9582728cd8e9f3c52766bd6283e44ec43cba6d76ce8"
+    }
+  ]
+}

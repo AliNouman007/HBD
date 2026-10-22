@@ -1,0 +1,37 @@
+{
+  "phase": "ending",
+  "mode": "journey",
+  "progress": 1,
+  "doorOpen": true,
+  "exitDoorOpen": true,
+  "extinguished": true,
+  "doorT": 1,
+  "exitDoorT": 1,
+  "wishT": 7.215099999999961,
+  "celebrationT": 11.014199999999937,
+  "celebrationSeen": true,
+  "giftT": 1,
+  "giftOpened": true,
+  "endingT": 42.36600000000028,
+  "scene": 6,
+  "error": null,
+  "assetBlocked": false,
+  "revision": 0,
+  "audio": {
+    "unlocked": false,
+    "muted": false,
+    "state": "not-created",
+    "micDucked": false,
+    "recordingLoaded": false,
+    "activeSources": 0,
+    "oneShots": 0,
+    "cues": [
+      "portal",
+      "puff",
+      "gift",
+      "ending"
+    ],
+    "error": ""
+  },
+  "fixture": "UI only; no 3D rendering"
+}

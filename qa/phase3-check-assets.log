@@ -1,0 +1,168 @@
+{
+  "groups": {
+    "bedroom": {
+      "bytes": 7488752,
+      "reachableNodes": 182,
+      "totalNodes": 182,
+      "renderedTriangles": 454616,
+      "estimatedPrimitiveDraws": 68,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT bedroom",
+      "contentSlots": [
+        "Portal_screen"
+      ]
+    },
+    "garden": {
+      "bytes": 11032104,
+      "reachableNodes": 481,
+      "totalNodes": 481,
+      "renderedTriangles": 1006954,
+      "estimatedPrimitiveDraws": 168,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT garden",
+      "contentSlots": []
+    },
+    "door": {
+      "bytes": 1947752,
+      "reachableNodes": 31,
+      "totalNodes": 31,
+      "renderedTriangles": 5780,
+      "estimatedPrimitiveDraws": 29,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT door",
+      "contentSlots": [
+        "HANDLE • lever spindle",
+        "DOOR • inward hinge"
+      ]
+    },
+    "salon": {
+      "bytes": 14142744,
+      "reachableNodes": 554,
+      "totalNodes": 554,
+      "renderedTriangles": 1062998,
+      "estimatedPrimitiveDraws": 92,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT salon",
+      "contentSlots": []
+    },
+    "cake": {
+      "bytes": 4219792,
+      "reachableNodes": 169,
+      "totalNodes": 169,
+      "renderedTriangles": 1061502,
+      "estimatedPrimitiveDraws": 7,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT cake",
+      "contentSlots": []
+    },
+    "flames": {
+      "bytes": 47332,
+      "reachableNodes": 15,
+      "totalNodes": 15,
+      "renderedTriangles": 3360,
+      "estimatedPrimitiveDraws": 9,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT flames",
+      "contentSlots": [
+        "Hero flame 1 • motion pivot",
+        "Hero flame 2 • motion pivot",
+        "Hero flame 3 • motion pivot"
+      ]
+    },
+    "exit-door": {
+      "bytes": 367252,
+      "reachableNodes": 118,
+      "totalNodes": 118,
+      "renderedTriangles": 25096,
+      "estimatedPrimitiveDraws": 114,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT exit-door",
+      "contentSlots": []
+    },
+    "courtyard": {
+      "bytes": 3103320,
+      "reachableNodes": 30,
+      "totalNodes": 30,
+      "renderedTriangles": 124564,
+      "estimatedPrimitiveDraws": 18,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT courtyard",
+      "contentSlots": [
+        "Portrait • supplied image placeholder • matte ivory insert",
+        "Memory 1 • supplied photo placeholder • matte ivory insert"
+      ]
+    },
+    "gift": {
+      "bytes": 6057500,
+      "reachableNodes": 65,
+      "totalNodes": 65,
+      "renderedTriangles": 140960,
+      "estimatedPrimitiveDraws": 51,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT gift",
+      "contentSlots": []
+    },
+    "ending": {
+      "bytes": 2033980,
+      "reachableNodes": 54,
+      "totalNodes": 54,
+      "renderedTriangles": 77832,
+      "estimatedPrimitiveDraws": 10,
+      "badNumbers": 0,
+      "sceneName": "P2 EXPORT ending",
+      "contentSlots": [
+        "06 LETTER • blank cotton sheet — replace with supplied mess"
+      ]
+    }
+  },
+  "failures": [],
+  "cameras": {
+    "samples": 749,
+    "start": 1,
+    "end": 3000,
+    "portal180": {
+      "p": [
+        -40,
+        0.16801266372203827,
+        0.18468882143497467
+      ],
+      "q": [
+        -0.059964004904031754,
+        0,
+        0,
+        0.9982005953788757
+      ],
+      "s": [
+        1,
+        1,
+        1
+      ],
+      "f": 180,
+      "lens": 31.002452850341797,
+      "sensor": 36,
+      "camera": "MASTER CAMERA • laptop → garden → doorway"
+    },
+    "portal181": {
+      "p": [
+        0.11999999731779099,
+        1.6000003814697266,
+        9
+      ],
+      "q": [
+        -0.0022467616945505142,
+        0.006741099525243044,
+        0.000015147035810514353,
+        0.99997478723526
+      ],
+      "s": [
+        0.9999999403953552,
+        1,
+        1
+      ],
+      "f": 181,
+      "lens": 34.5,
+      "sensor": 36,
+      "camera": "MASTER CAMERA • laptop → garden → doorway"
+    }
+  }
+}

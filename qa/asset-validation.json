@@ -1,0 +1,150 @@
+{
+  "groups": {
+    "bedroom": {
+      "bytes": 2777844,
+      "reachableNodes": 181,
+      "totalNodes": 181,
+      "renderedTriangles": 263424,
+      "estimatedPrimitiveDraws": 40,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT bedroom",
+      "contentSlots": [
+        "Portal_screen"
+      ]
+    },
+    "garden": {
+      "bytes": 14928664,
+      "reachableNodes": 471,
+      "totalNodes": 471,
+      "renderedTriangles": 3538786,
+      "estimatedPrimitiveDraws": 177,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT garden",
+      "contentSlots": []
+    },
+    "door": {
+      "bytes": 126820,
+      "reachableNodes": 28,
+      "totalNodes": 28,
+      "renderedTriangles": 5216,
+      "estimatedPrimitiveDraws": 26,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT door",
+      "contentSlots": [
+        "HANDLE • lever spindle",
+        "DOOR • inward hinge"
+      ]
+    },
+    "salon": {
+      "bytes": 7050484,
+      "reachableNodes": 644,
+      "totalNodes": 644,
+      "renderedTriangles": 954154,
+      "estimatedPrimitiveDraws": 98,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT salon",
+      "contentSlots": []
+    },
+    "cake": {
+      "bytes": 4219792,
+      "reachableNodes": 169,
+      "totalNodes": 169,
+      "renderedTriangles": 1061502,
+      "estimatedPrimitiveDraws": 7,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT cake",
+      "contentSlots": []
+    },
+    "flames": {
+      "bytes": 47332,
+      "reachableNodes": 15,
+      "totalNodes": 15,
+      "renderedTriangles": 3360,
+      "estimatedPrimitiveDraws": 9,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT flames",
+      "contentSlots": [
+        "Hero flame 1 • motion pivot",
+        "Hero flame 2 • motion pivot",
+        "Hero flame 3 • motion pivot"
+      ]
+    },
+    "terrace": {
+      "bytes": 6100036,
+      "reachableNodes": 73,
+      "totalNodes": 73,
+      "renderedTriangles": 659754,
+      "estimatedPrimitiveDraws": 65,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT terrace",
+      "contentSlots": [
+        "Portrait • supplied image placeholder • matte ivory insert",
+        "Memory 1 • supplied photo placeholder • matte ivory insert",
+        "Memory 2 • supplied photo placeholder • matte ivory insert",
+        "Memory 3 • supplied photo placeholder • matte ivory insert"
+      ]
+    },
+    "ending": {
+      "bytes": 3678100,
+      "reachableNodes": 138,
+      "totalNodes": 138,
+      "renderedTriangles": 250424,
+      "estimatedPrimitiveDraws": 34,
+      "badNumbers": 0,
+      "sceneName": "WEB EXPORT ending",
+      "contentSlots": [
+        "06 LETTER • blank cotton sheet — replace with supplied mess"
+      ]
+    }
+  },
+  "failures": [],
+  "cameras": {
+    "samples": 750,
+    "start": 1,
+    "end": 3000,
+    "portal180": {
+      "p": [
+        -40,
+        0.16801266372203827,
+        0.18468882143497467
+      ],
+      "q": [
+        -0.059964004904031754,
+        0,
+        0,
+        0.9982005953788757
+      ],
+      "s": [
+        1,
+        1,
+        1
+      ],
+      "f": 180,
+      "lens": 31.002452850341797,
+      "sensor": 36,
+      "camera": "MASTER CAMERA • laptop → garden → doorway"
+    },
+    "portal181": {
+      "p": [
+        0.11999999731779099,
+        1.6000003814697266,
+        9
+      ],
+      "q": [
+        -0.0022467616945505142,
+        0.006741099525243044,
+        0.000015147035810514353,
+        0.99997478723526
+      ],
+      "s": [
+        0.9999999403953552,
+        1,
+        1
+      ],
+      "f": 181,
+      "lens": 34.5,
+      "sensor": 36,
+      "camera": "MASTER CAMERA • laptop → garden → doorway"
+    }
+  }
+}

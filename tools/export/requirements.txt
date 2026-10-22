@@ -1,0 +1,2 @@
+# Python 3.11 alternative to the Blender executable.
+bpy==4.3.0

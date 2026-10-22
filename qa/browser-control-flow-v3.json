@@ -1,0 +1,38 @@
+{
+  "mode": "UI-only fixture, no WebGL renderer",
+  "desktopViewport": [
+    1363,
+    936
+  ],
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "doorGate": {
+    "heldProgress": 0.32,
+    "releaseProgress": 0.32,
+    "doorOpen": true
+  },
+  "wishGate": {
+    "heldProgress": 0.56,
+    "releaseProgress": 0.56,
+    "extinguished": true
+  },
+  "deniedMicrophoneFixture": "tap fallback passed",
+  "unavailableMicrophone": "HTTP preview limitation handled; tap fallback passed",
+  "letter": "readable and continue control reached on desktop and mobile",
+  "endingProgress": 1,
+  "reverse": {
+    "progress": 0.982,
+    "doorOpen": true,
+    "extinguished": true
+  },
+  "replay": {
+    "phase": "ready",
+    "progress": 0,
+    "doorOpen": false,
+    "extinguished": false
+  },
+  "liveMicrophone": "not tested",
+  "rendered3DJourney": "blocked: WebGL disabled"
+}

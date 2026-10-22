@@ -1,0 +1,48 @@
+.birthday-sticker{display:inline-block;max-width:100%;height:auto;flex:none;overflow:visible;vertical-align:middle;pointer-events:none;user-select:none}
+.birthday-sticker__character{transform-origin:60px 108px;animation:birthday-sticker-bob 3.8s ease-in-out infinite}
+.birthday-sticker__shadow{transform-origin:60px 112px;animation:birthday-sticker-shadow 3.8s ease-in-out infinite}
+.birthday-sticker__eyes{transform-origin:60px 56px;animation:birthday-sticker-blink 5.4s ease-in-out infinite}
+.birthday-sticker__wave{transform-origin:85px 77px;animation:birthday-sticker-wave 2.8s ease-in-out infinite}
+.birthday-sticker__float{transform-box:fill-box;transform-origin:center;animation:birthday-sticker-float 4.2s ease-in-out infinite}
+.birthday-sticker__float--two{animation-delay:-2.1s}
+.birthday-sticker__flame{transform-origin:60px 86px;animation:birthday-sticker-flame 2s ease-in-out infinite}
+.birthday-sticker__clap-left{transform-origin:37px 82px;animation:birthday-sticker-clap-left 2.6s ease-in-out infinite}
+.birthday-sticker__clap-right{transform-origin:83px 82px;animation:birthday-sticker-clap-right 2.6s ease-in-out infinite}
+.birthday-sticker__clap-sparks{animation:birthday-sticker-sparks 2.6s ease-in-out infinite}
+.birthday-sticker__heart{transform-origin:60px 94px;animation:birthday-sticker-heart 3.2s ease-in-out infinite}
+.birthday-sticker__gift{transform-origin:60px 102px;animation:birthday-sticker-gift 3.6s ease-in-out infinite}
+.birthday-sticker--wish .birthday-sticker__character{animation-duration:5s}
+.birthday-sticker--wish .birthday-sticker__shadow{animation-duration:5s}
+
+@keyframes birthday-sticker-bob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-3px) rotate(1deg)}}
+@keyframes birthday-sticker-shadow{0%,100%{transform:scaleX(1);opacity:.12}50%{transform:scaleX(.9);opacity:.08}}
+@keyframes birthday-sticker-blink{0%,41%,46%,100%{transform:scaleY(1)}43%,44%{transform:scaleY(.1)}}
+@keyframes birthday-sticker-wave{0%,12%,60%,100%{transform:rotate(0)}22%,42%{transform:rotate(13deg)}32%,52%{transform:rotate(-11deg)}}
+@keyframes birthday-sticker-float{0%,100%{transform:translateY(2px) rotate(-7deg);opacity:.55}50%{transform:translateY(-3px) rotate(6deg);opacity:1}}
+@keyframes birthday-sticker-flame{0%,100%{transform:rotate(-4deg) scaleY(.96)}50%{transform:rotate(5deg) scaleY(1.07)}}
+@keyframes birthday-sticker-clap-left{0%,12%,65%,100%{transform:rotate(-8deg)}23%,43%{transform:rotate(15deg)}33%,53%{transform:rotate(-5deg)}}
+@keyframes birthday-sticker-clap-right{0%,12%,65%,100%{transform:rotate(8deg)}23%,43%{transform:rotate(-15deg)}33%,53%{transform:rotate(5deg)}}
+@keyframes birthday-sticker-sparks{0%,15%,33%,53%,100%{opacity:0}23%,43%{opacity:1}}
+@keyframes birthday-sticker-heart{0%,30%,60%,100%{transform:scale(1)}40%,50%{transform:scale(1.055)}}
+@keyframes birthday-sticker-gift{0%,25%,65%,100%{transform:rotate(0)}35%,55%{transform:rotate(-3deg)}45%{transform:rotate(3deg)}}
+
+@media(prefers-reduced-motion:reduce){.birthday-sticker *{animation:none!important}}
+
+/* Short reactions reuse the existing bear without adding work to the 3D scene. */
+.birthday-companion{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 14px;max-width:370px;text-shadow:none;pointer-events:none}
+.birthday-companion__bubble{position:relative;display:block;border:1px solid #ebcbd2;background:#fff4e9;color:#704b56;border-radius:17px 17px 17px 4px;padding:10px 14px;font:14px/1.45 Arial,sans-serif;text-align:left;text-wrap:balance;box-shadow:0 3px 14px #29132018;animation:birthday-bubble-in .32s ease-out both}
+.birthday-companion--celebrate>.birthday-sticker{animation:birthday-bear-cheer .7s ease-out both}
+.welcome-greeting{display:block}.welcome-greeting .birthday-companion{justify-content:flex-start;margin-left:0}.welcome-greeting .eyebrow{display:block;max-width:none}
+.wish-panel>.birthday-companion{margin-bottom:8px}.wish-panel>.eyebrow{font-size:10px}.wish-panel h2{margin:8px 0 18px}
+.date-caption .birthday-companion{margin-bottom:5px}.date-caption .birthday-companion__bubble{font-size:12px;padding:8px 11px}
+.letter-greeting .birthday-companion__bubble,.keepsake-greeting .birthday-companion__bubble{font-size:13px}
+.ending-message>.birthday-companion{max-width:390px}.ending-message .birthday-companion__bubble{font-size:14px}
+.experience :is(.primary-button,.secondary-button,.text-button,.icon-button){transition:transform .14s ease,background-color .14s ease}
+.experience :is(.primary-button,.secondary-button,.text-button,.icon-button):active:not(:disabled){transform:scale(.96)}
+@keyframes birthday-bubble-in{from{opacity:0;transform:translateY(5px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes birthday-bear-cheer{0%,100%{transform:none}30%{transform:translateY(-9px) rotate(-5deg)}60%{transform:translateY(-3px) rotate(4deg)}}
+@container(max-width:650px){.birthday-companion{gap:5px;max-width:320px;margin-bottom:10px}.birthday-companion>.birthday-sticker{width:62px;height:62px}.birthday-companion__bubble{font-size:12px;padding:8px 11px}.ending-message>.birthday-companion>.birthday-sticker{width:88px;height:88px}.ending-message .birthday-companion__bubble{font-size:12px}}
+@media(max-height:600px){.birthday-companion>.birthday-sticker{width:48px;height:48px}.birthday-companion{margin-bottom:6px}.birthday-companion__bubble{padding:6px 10px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.birthday-companion__bubble,.birthday-companion--celebrate>.birthday-sticker{animation:none}.experience :is(.primary-button,.secondary-button,.text-button,.icon-button){transition:none}.experience :is(.primary-button,.secondary-button,.text-button,.icon-button):active:not(:disabled){transform:none}}
+
+@media(max-height:450px) and (min-width:651px){.experience[data-phase="ready"] .invitation h1{margin:8px 0 12px}.experience[data-phase="ready"] .opening-options{margin-top:8px}.experience[data-phase="ready"] .invitation .instruction{margin-top:8px}}

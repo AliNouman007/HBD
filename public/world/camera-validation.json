@@ -1,0 +1,43 @@
+{
+  "master": "birthday-world-phase2-world-final.blend",
+  "masterSHA256": "ef9776f209b4b7002cd053a62d8309a11d53f5756cddace6371ca9a2de3c94eb",
+  "fps": 30,
+  "range": [
+    1,
+    3000
+  ],
+  "blenderToGLTF": "(x,y,z) \u2192 (x,z,-y)",
+  "cameraSamples": 749,
+  "colliderClearance": {
+    "arrival divider": {
+      "minimumMetres": 0.22806666848858834,
+      "frame": 2355
+    },
+    "letter wing": {
+      "minimumMetres": 0.48648439593940324,
+      "frame": 2391
+    },
+    "left gallery enclosure": {
+      "minimumMetres": 1.3099999046325683,
+      "frame": 1966
+    },
+    "right gallery enclosure": {
+      "minimumMetres": 1.1600000476837158,
+      "frame": 1510
+    },
+    "back gallery enclosure": {
+      "minimumMetres": 1.7899991607666017,
+      "frame": 2578
+    }
+  },
+  "largeCameraChanges": [
+    {
+      "from": 180,
+      "to": 181,
+      "metresPerFrame": 41.10200359816408,
+      "degreesPerFrame": 6.66273467805363,
+      "intentionalPortal": true
+    }
+  ],
+  "scope": "Analytical camera-centre distances to all five new solid courtyard wall volumes; production renders separately inspect furniture/doors/hero views. Not a full body collision simulator."
+}

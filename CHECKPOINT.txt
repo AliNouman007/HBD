@@ -1,0 +1,3 @@
+Unpublished source checkpoint 2f496774a8b81df0cc0e0edd4779619f0d36d763
+Open birthday-world/README.md. Install dependencies with pnpm install --frozen-lockfile.
+Full WebGL visual and listening acceptance remain open.

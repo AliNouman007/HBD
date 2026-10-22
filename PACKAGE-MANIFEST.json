@@ -1,0 +1,1215 @@
+{
+  "commit": "2f496774a8b81df0cc0e0edd4779619f0d36d763",
+  "files": [
+    {
+      "path": "birthday-world/.gitignore",
+      "bytes": 633,
+      "sha256": "22de3b7f4bd680c505db1f73762e85928daae197f91b13ba95554c54ebfb5eba"
+    },
+    {
+      "path": "birthday-world/.npmrc",
+      "bytes": 45,
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+    },
+    {
+      "path": "birthday-world/.openai/hosting.json",
+      "bytes": 140,
+      "sha256": "0c46f915a5687342d84ffb598fe3c3f0e259a025f11caae8096c50b7d03fef84"
+    },
+    {
+      "path": "birthday-world/README.md",
+      "bytes": 7478,
+      "sha256": "610c2049b5d9c0c0e8d402deb4178822bf9896bcb38c4c64284884fe60290a89"
+    },
+    {
+      "path": "birthday-world/app/chatgpt-auth.ts",
+      "bytes": 2550,
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+    },
+    {
+      "path": "birthday-world/app/globals.css",
+      "bytes": 10374,
+      "sha256": "55d04aa8dbcec40e616c26b01b64683760a07d8d3252426cbd5f67f7d6a25bd7"
+    },
+    {
+      "path": "birthday-world/app/layout.tsx",
+      "bytes": 535,
+      "sha256": "808f38e2f92b2f2b608447f1670064f09071fb0a3f991acf25e0257b8df1de40"
+    },
+    {
+      "path": "birthday-world/app/page.tsx",
+      "bytes": 138,
+      "sha256": "70dd2fa9807539226b2445bc82e569c4c23b142c84ced41e45eb113724a4005b"
+    },
+    {
+      "path": "birthday-world/app/qa/assets/page.tsx",
+      "bytes": 7934,
+      "sha256": "4aa5ee88e9754e0c6989e0603f725cb07060d2f9aa068fd5993e577e4d6e604d"
+    },
+    {
+      "path": "birthday-world/app/qa/celebration/page.tsx",
+      "bytes": 3544,
+      "sha256": "90ce30c50314a2da6cefb222e55583740fb59d8732542ff89e1de6ef7b193568"
+    },
+    {
+      "path": "birthday-world/app/qa/page.tsx",
+      "bytes": 826,
+      "sha256": "1a8ca4a5d74975b5f858cc811b8c32772c6530488f5646cbc9ee02a0882a0226"
+    },
+    {
+      "path": "birthday-world/assets/art-provenance/generation-prompts.json",
+      "bytes": 2468,
+      "sha256": "7e5568414370834ff11209bea7879980bb19a573a4556d2f5302c14cdc8f48f3"
+    },
+    {
+      "path": "birthday-world/assets/art-provenance/meadow-generation-prompt.txt",
+      "bytes": 1298,
+      "sha256": "72b8beb2f657b5291aa5e1d9a7d9fdb8dac3c443c3301eaa60385c34d6d04bea"
+    },
+    {
+      "path": "birthday-world/assets/blender-references/garden-screen.png",
+      "bytes": 1702908,
+      "sha256": "416b8d9a46312fe5758fd5927755ea6249f12fb91f98b98316cba08c76647c86"
+    },
+    {
+      "path": "birthday-world/build/sites-vite-plugin.LICENSE",
+      "bytes": 1063,
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+    },
+    {
+      "path": "birthday-world/build/sites-vite-plugin.ts",
+      "bytes": 7185,
+      "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+    },
+    {
+      "path": "birthday-world/cloudflare-env.d.ts",
+      "bytes": 99,
+      "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+    },
+    {
+      "path": "birthday-world/components.json",
+      "bytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "path": "birthday-world/components/ui/accordion.tsx",
+      "bytes": 2048,
+      "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+    },
+    {
+      "path": "birthday-world/components/ui/alert-dialog.tsx",
+      "bytes": 5439,
+      "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+    },
+    {
+      "path": "birthday-world/components/ui/alert.tsx",
+      "bytes": 1614,
+      "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+    },
+    {
+      "path": "birthday-world/components/ui/aspect-ratio.tsx",
+      "bytes": 274,
+      "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+    },
+    {
+      "path": "birthday-world/components/ui/attachment.tsx",
+      "bytes": 6002,
+      "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+    },
+    {
+      "path": "birthday-world/components/ui/avatar.tsx",
+      "bytes": 2916,
+      "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+    },
+    {
+      "path": "birthday-world/components/ui/badge.tsx",
+      "bytes": 1776,
+      "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+    },
+    {
+      "path": "birthday-world/components/ui/breadcrumb.tsx",
+      "bytes": 2350,
+      "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+    },
+    {
+      "path": "birthday-world/components/ui/bubble.tsx",
+      "bytes": 4699,
+      "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+    },
+    {
+      "path": "birthday-world/components/ui/button-group.tsx",
+      "bytes": 2202,
+      "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+    },
+    {
+      "path": "birthday-world/components/ui/button.tsx",
+      "bytes": 2392,
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "path": "birthday-world/components/ui/calendar.tsx",
+      "bytes": 7832,
+      "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+    },
+    {
+      "path": "birthday-world/components/ui/card.tsx",
+      "bytes": 1987,
+      "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+    },
+    {
+      "path": "birthday-world/components/ui/carousel.tsx",
+      "bytes": 5556,
+      "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+    },
+    {
+      "path": "birthday-world/components/ui/chart.tsx",
+      "bytes": 10614,
+      "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+    },
+    {
+      "path": "birthday-world/components/ui/checkbox.tsx",
+      "bytes": 1214,
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "path": "birthday-world/components/ui/collapsible.tsx",
+      "bytes": 795,
+      "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+    },
+    {
+      "path": "birthday-world/components/ui/combobox.tsx",
+      "bytes": 9158,
+      "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+    },
+    {
+      "path": "birthday-world/components/ui/command.tsx",
+      "bytes": 4818,
+      "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+    },
+    {
+      "path": "birthday-world/components/ui/context-menu.tsx",
+      "bytes": 8268,
+      "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+    },
+    {
+      "path": "birthday-world/components/ui/dialog.tsx",
+      "bytes": 4303,
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "path": "birthday-world/components/ui/direction.tsx",
+      "bytes": 506,
+      "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+    },
+    {
+      "path": "birthday-world/components/ui/drawer.tsx",
+      "bytes": 4255,
+      "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+    },
+    {
+      "path": "birthday-world/components/ui/dropdown-menu.tsx",
+      "bytes": 8418,
+      "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+    },
+    {
+      "path": "birthday-world/components/ui/empty.tsx",
+      "bytes": 2396,
+      "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+    },
+    {
+      "path": "birthday-world/components/ui/field.tsx",
+      "bytes": 6159,
+      "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+    },
+    {
+      "path": "birthday-world/components/ui/form.tsx",
+      "bytes": 3757,
+      "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+    },
+    {
+      "path": "birthday-world/components/ui/hover-card.tsx",
+      "bytes": 1526,
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+    },
+    {
+      "path": "birthday-world/components/ui/input-group.tsx",
+      "bytes": 5065,
+      "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+    },
+    {
+      "path": "birthday-world/components/ui/input-otp.tsx",
+      "bytes": 2254,
+      "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+    },
+    {
+      "path": "birthday-world/components/ui/input.tsx",
+      "bytes": 962,
+      "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+    },
+    {
+      "path": "birthday-world/components/ui/item.tsx",
+      "bytes": 4486,
+      "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+    },
+    {
+      "path": "birthday-world/components/ui/kbd.tsx",
+      "bytes": 862,
+      "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+    },
+    {
+      "path": "birthday-world/components/ui/label.tsx",
+      "bytes": 606,
+      "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+    },
+    {
+      "path": "birthday-world/components/ui/marker.tsx",
+      "bytes": 1864,
+      "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+    },
+    {
+      "path": "birthday-world/components/ui/menubar.tsx",
+      "bytes": 8389,
+      "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+    },
+    {
+      "path": "birthday-world/components/ui/message-scroller.tsx",
+      "bytes": 3992,
+      "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+    },
+    {
+      "path": "birthday-world/components/ui/message.tsx",
+      "bytes": 2232,
+      "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+    },
+    {
+      "path": "birthday-world/components/ui/native-select.tsx",
+      "bytes": 1995,
+      "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+    },
+    {
+      "path": "birthday-world/components/ui/navigation-menu.tsx",
+      "bytes": 6658,
+      "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+    },
+    {
+      "path": "birthday-world/components/ui/pagination.tsx",
+      "bytes": 2717,
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "path": "birthday-world/components/ui/popover.tsx",
+      "bytes": 2357,
+      "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+    },
+    {
+      "path": "birthday-world/components/ui/progress.tsx",
+      "bytes": 755,
+      "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+    },
+    {
+      "path": "birthday-world/components/ui/radio-group.tsx",
+      "bytes": 1460,
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "path": "birthday-world/components/ui/resizable.tsx",
+      "bytes": 1815,
+      "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+    },
+    {
+      "path": "birthday-world/components/ui/scroll-area.tsx",
+      "bytes": 1639,
+      "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+    },
+    {
+      "path": "birthday-world/components/ui/select.tsx",
+      "bytes": 6353,
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "path": "birthday-world/components/ui/separator.tsx",
+      "bytes": 694,
+      "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+    },
+    {
+      "path": "birthday-world/components/ui/sheet.tsx",
+      "bytes": 4188,
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "path": "birthday-world/components/ui/sidebar.tsx",
+      "bytes": 21526,
+      "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+    },
+    {
+      "path": "birthday-world/components/ui/skeleton.tsx",
+      "bytes": 276,
+      "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+    },
+    {
+      "path": "birthday-world/components/ui/slider.tsx",
+      "bytes": 1991,
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "path": "birthday-world/components/ui/sonner.tsx",
+      "bytes": 1034,
+      "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+    },
+    {
+      "path": "birthday-world/components/ui/spinner.tsx",
+      "bytes": 331,
+      "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+    },
+    {
+      "path": "birthday-world/components/ui/switch.tsx",
+      "bytes": 1408,
+      "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+    },
+    {
+      "path": "birthday-world/components/ui/table.tsx",
+      "bytes": 2478,
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "path": "birthday-world/components/ui/tabs.tsx",
+      "bytes": 3782,
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "path": "birthday-world/components/ui/textarea.tsx",
+      "bytes": 759,
+      "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+    },
+    {
+      "path": "birthday-world/components/ui/toggle-group.tsx",
+      "bytes": 2308,
+      "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+    },
+    {
+      "path": "birthday-world/components/ui/toggle.tsx",
+      "bytes": 1565,
+      "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+    },
+    {
+      "path": "birthday-world/components/ui/tooltip.tsx",
+      "bytes": 1830,
+      "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+    },
+    {
+      "path": "birthday-world/components/world/BirthdayDate.tsx",
+      "bytes": 1524,
+      "sha256": "a7bce5ef6e773723db9412116f34ab2b6cbd2f71fa289dbe00affc91ffad0483"
+    },
+    {
+      "path": "birthday-world/components/world/BirthdayExperience.tsx",
+      "bytes": 25294,
+      "sha256": "a852d6e5a64b74c99fa9efae18149ec5b2a1ca239e05a92895b0ce5ce93feb6a"
+    },
+    {
+      "path": "birthday-world/db/index.ts",
+      "bytes": 423,
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+    },
+    {
+      "path": "birthday-world/db/schema.ts",
+      "bytes": 169,
+      "sha256": "13ddacbf0be50e054d450a6c642b7fdc1aa943fd6b99084711e07e58b600390d"
+    },
+    {
+      "path": "birthday-world/drizzle.config.ts",
+      "bytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "path": "birthday-world/drizzle/meta/_journal.json",
+      "bytes": 61,
+      "sha256": "90cb374e093894d0efce6f1830d873a42aadd8ba49d2f024495e5cb2e1c8c303"
+    },
+    {
+      "path": "birthday-world/eslint.config.mjs",
+      "bytes": 846,
+      "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+    },
+    {
+      "path": "birthday-world/examples/d1/app/api/notes/route.ts",
+      "bytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "path": "birthday-world/examples/d1/db/schema.ts",
+      "bytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "path": "birthday-world/hooks/use-mobile.ts",
+      "bytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "path": "birthday-world/lib/utils.ts",
+      "bytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "path": "birthday-world/lib/world/actors.ts",
+      "bytes": 896,
+      "sha256": "4a7e6f78149ee667449e5fed0a371cc7d8f0e3810e69be40a95be666ddbc1d0b"
+    },
+    {
+      "path": "birthday-world/lib/world/assets.ts",
+      "bytes": 10742,
+      "sha256": "509f2cf0c32d7c6854d9b414e56a92d50447fd26163e67c5b22322aad042fbc9"
+    },
+    {
+      "path": "birthday-world/lib/world/audio.ts",
+      "bytes": 8331,
+      "sha256": "b33f2b04b3a5d4af32b3785fe7c2f4bf3d7f0262f991b211d598b46a30942bc3"
+    },
+    {
+      "path": "birthday-world/lib/world/camera.ts",
+      "bytes": 1872,
+      "sha256": "7b0d44989019ad9f63c6542e0339ed757e4030ed5d3d0da7f99e95611d6a89ef"
+    },
+    {
+      "path": "birthday-world/lib/world/content.ts",
+      "bytes": 3171,
+      "sha256": "e49c5f9ebd4f5f7dd3f2c3be92b7b93c3a081fc9d498226cdd628f170869ea5a"
+    },
+    {
+      "path": "birthday-world/lib/world/date-particles.ts",
+      "bytes": 3224,
+      "sha256": "83d3ae5edd7a0e9c606539f9458df1c30e7c351cb3db978a09d3c8eacc2880b8"
+    },
+    {
+      "path": "birthday-world/lib/world/effects.ts",
+      "bytes": 2657,
+      "sha256": "13cfa0f48cf11ff1a04c7c7c0dacd0c69b21144c00c0c3c7af1379425ccf0863"
+    },
+    {
+      "path": "birthday-world/lib/world/engine.ts",
+      "bytes": 19268,
+      "sha256": "7d77e8b5bf45cafa4001c0e6baae5c6dc749fa73139ed1953f8532a62177d7ba"
+    },
+    {
+      "path": "birthday-world/lib/world/journey.ts",
+      "bytes": 8995,
+      "sha256": "e6fa5f142fb4664bac7b1a7b9cd7c9ecdb50af5f0db8bbd090c7b723aa6069ac"
+    },
+    {
+      "path": "birthday-world/lib/world/lighting.ts",
+      "bytes": 2249,
+      "sha256": "809d44b777a7e1f59cc424c30b584fa4eac97ba198b06eee260eb959bcc60413"
+    },
+    {
+      "path": "birthday-world/lib/world/microphone.ts",
+      "bytes": 2425,
+      "sha256": "04e9fe46ce71b16ee56f578afa24bf4e067b5203d17e93c417d96b1d1a289238"
+    },
+    {
+      "path": "birthday-world/lib/world/preparation.ts",
+      "bytes": 608,
+      "sha256": "030a208be83911a7cc3117218948009f76d7f1e0ada7a077f8589187fdc93a01"
+    },
+    {
+      "path": "birthday-world/lib/world/revision.ts",
+      "bytes": 217,
+      "sha256": "0939f68ce8840b9478b7eab454a2b8937bba3cb019d8913051156853a3116992"
+    },
+    {
+      "path": "birthday-world/lib/world/texture-pool.ts",
+      "bytes": 3431,
+      "sha256": "7881afb2ca7c7f9f61a0935e4caf04c8fab112348de874f2e980367f112ed4d3"
+    },
+    {
+      "path": "birthday-world/lib/world/view-mode.ts",
+      "bytes": 2627,
+      "sha256": "857ed303dbd68b6e1fc203572e49142773b33fb9f4e1c07a6bf95b33010abee4"
+    },
+    {
+      "path": "birthday-world/next.config.ts",
+      "bytes": 138,
+      "sha256": "4351a2b0b652cbfc449d0ec0bab2a6c229c8b7eba63cb590fccf23abd40593cc"
+    },
+    {
+      "path": "birthday-world/package.json",
+      "bytes": 2457,
+      "sha256": "927fa30d5552235e4942c840708468b51872531fb62d0bdfcc1be226ff197416"
+    },
+    {
+      "path": "birthday-world/pnpm-lock.yaml",
+      "bytes": 348274,
+      "sha256": "8f22b43dea5a1bf5c14d1f91441b329684831bdd29e67f2019c83785a50da2f8"
+    },
+    {
+      "path": "birthday-world/pnpm-workspace.yaml",
+      "bytes": 759,
+      "sha256": "a054fd9884436f417b7d804c19615ad6048999e94438cd3f7e74fdef2d300c8f"
+    },
+    {
+      "path": "birthday-world/postcss.config.mjs",
+      "bytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "birthday-world/public/audio/credits.json",
+      "bytes": 1340,
+      "sha256": "8c92618046a13cf76dbbd8e916fae148a81825704068ae80421ba4a7f6524be8"
+    },
+    {
+      "path": "birthday-world/public/audio/happy-birthday.mp3",
+      "bytes": 177155,
+      "sha256": "1a30f66fb3b2bd6f25d950568e87731a8be20b1540505fb1184c00298e774397"
+    },
+    {
+      "path": "birthday-world/public/favicon.svg",
+      "bytes": 274,
+      "sha256": "3d853be54eaf56593aafee9681174b0cfb48aa1cb59406b6038ad075474d867f"
+    },
+    {
+      "path": "birthday-world/public/materials/garden-screen-preview.png",
+      "bytes": 1702908,
+      "sha256": "416b8d9a46312fe5758fd5927755ea6249f12fb91f98b98316cba08c76647c86"
+    },
+    {
+      "path": "birthday-world/public/materials/meadow-albedo.png",
+      "bytes": 4114260,
+      "sha256": "40272082a1ea255b3a320553bf0233e759056735df8c6bf2c57aaab876505bf3"
+    },
+    {
+      "path": "birthday-world/public/personal-content.json",
+      "bytes": 1629,
+      "sha256": "7540a2cd079bf959085c68f5ad59b43bee21e9bc906322f78d38fd198220093a"
+    },
+    {
+      "path": "birthday-world/public/personal/botanical-still-life.png",
+      "bytes": 2364447,
+      "sha256": "be0b233193a699a690a30fe4b1007849d8a9bd7ebfebeec5bae4f465c086be41"
+    },
+    {
+      "path": "birthday-world/public/personal/demo-portrait.png",
+      "bytes": 2168238,
+      "sha256": "5d0b8320e3d2c29a3b0477020db1c68ef6ed51a5b6433921a29eefa0b9527533"
+    },
+    {
+      "path": "birthday-world/public/personal/letter-print.png",
+      "bytes": 47618,
+      "sha256": "d59366ae07c362399e4be10d98372689d2b20b873335416a01d87e2f88acf85a"
+    },
+    {
+      "path": "birthday-world/public/personal/note-1.png",
+      "bytes": 6760,
+      "sha256": "7dc1207b89f3aee3ce2e9efa7dc20384dc63f6672958a0b9257e3b13917f1275"
+    },
+    {
+      "path": "birthday-world/public/personal/note-2.png",
+      "bytes": 8743,
+      "sha256": "57e11392e52b7c6607a3b468e4366599e713fe7360f8e138a3e07d7f5976685e"
+    },
+    {
+      "path": "birthday-world/public/personal/note-3.png",
+      "bytes": 8617,
+      "sha256": "486a36b892ea47d24457e11e98c5ca59822316146411e06a8fd7c5b576741a51"
+    },
+    {
+      "path": "birthday-world/public/personal/received-card-placeholder.png",
+      "bytes": 12939,
+      "sha256": "237be7056a0c1ded24dc019dd38a767044f779dd4f68bfbce275eb09338bd3d8"
+    },
+    {
+      "path": "birthday-world/public/qa/wish-source.jpg",
+      "bytes": 82309,
+      "sha256": "9d20ab2704793683db88bf3be89f1efdbacb7195ee0eb6490357f74d9431f381"
+    },
+    {
+      "path": "birthday-world/public/world/anchors.json",
+      "bytes": 3646,
+      "sha256": "12ca01fef133e5185d90c9e3e4d96d4ad668f7a95794303f6e82cce852c1d434"
+    },
+    {
+      "path": "birthday-world/public/world/bedroom.glb",
+      "bytes": 7488752,
+      "sha256": "7d0439d711d0f7f8406c2d92ed718757b88d25958f1a7650eb643870b6fd3321"
+    },
+    {
+      "path": "birthday-world/public/world/cake.glb",
+      "bytes": 4219792,
+      "sha256": "5c7011369d08e0513e6ef8d9a1437f3a186e370dc5040ee5c1135b77e1be1252"
+    },
+    {
+      "path": "birthday-world/public/world/camera-validation.json",
+      "bytes": 1179,
+      "sha256": "0f661ea537ce5d3c8cf5ed3d4c898c00e0d82f5929909ec13aac387b6f99b554"
+    },
+    {
+      "path": "birthday-world/public/world/cameras.json",
+      "bytes": 199940,
+      "sha256": "e039f61f203ab3f6bda8c9dd907ce87f141d0016c74d45c286c030e8c2db4561"
+    },
+    {
+      "path": "birthday-world/public/world/courtyard.glb",
+      "bytes": 3103320,
+      "sha256": "53d9713881b8895afacd7fae156672fb750c6e4214562ef1592306736216e298"
+    },
+    {
+      "path": "birthday-world/public/world/door-event.json",
+      "bytes": 39134,
+      "sha256": "fbc5bcdf709dba9c8a2070c111a611816545788aa0d5765e07a927ae2a822aeb"
+    },
+    {
+      "path": "birthday-world/public/world/door.glb",
+      "bytes": 1947752,
+      "sha256": "333202d17e5f61f4b691d036101b581759d259d578730e71112dffaf6e80a801"
+    },
+    {
+      "path": "birthday-world/public/world/ending.glb",
+      "bytes": 2033980,
+      "sha256": "7c2f00182583991a57eb1fddcc127b21b280c3b91e1c4f48747ae9883ddbb839"
+    },
+    {
+      "path": "birthday-world/public/world/exit-door-event.json",
+      "bytes": 79019,
+      "sha256": "dd3ff2dfb6ac272b3af6f709dd29c372be952d1e1d2ba2fda022e186073ba11e"
+    },
+    {
+      "path": "birthday-world/public/world/exit-door.glb",
+      "bytes": 367252,
+      "sha256": "19b3d8dc555b8fe9eadce6df4fe7bddef8f678f6ffaf78e510b879f5eb70d09e"
+    },
+    {
+      "path": "birthday-world/public/world/export-report.json",
+      "bytes": 31081,
+      "sha256": "934b5b3996f6ba360a1119864be00bd46b1c1362900901828401b14633d7d5b3"
+    },
+    {
+      "path": "birthday-world/public/world/flames.glb",
+      "bytes": 47332,
+      "sha256": "69d71bad363e0c245de78f73f8789e42ac0aed836b9b57687ff6594aa5add7d1"
+    },
+    {
+      "path": "birthday-world/public/world/garden.glb",
+      "bytes": 11032104,
+      "sha256": "d3b93c593ddce648e954c754250dae3d39ca81b19df68f64527fb64cbdff0d07"
+    },
+    {
+      "path": "birthday-world/public/world/gift-event.json",
+      "bytes": 101892,
+      "sha256": "700a47f5babbbcd61592bc1c84534bb7d868edab1e275adcd03c8dc487cb9d8f"
+    },
+    {
+      "path": "birthday-world/public/world/gift.glb",
+      "bytes": 6057500,
+      "sha256": "91e5a596456d7fe71fef0a2717085938ac7713974465a3ae1330eec11e83850f"
+    },
+    {
+      "path": "birthday-world/public/world/lighting.json",
+      "bytes": 39496,
+      "sha256": "b1a5c3d4515f6fee5291bba29bf2395307c1f721e5bd31acc065fba14cabb301"
+    },
+    {
+      "path": "birthday-world/public/world/lightmaps/bedroom-indirect.exr",
+      "bytes": 1903935,
+      "sha256": "6d4cd7545dad2ca1fe153768ef8b2c06e23e548cca72d675fc7240ed956d6641"
+    },
+    {
+      "path": "birthday-world/public/world/lightmaps/courtyard-indirect.exr",
+      "bytes": 2505281,
+      "sha256": "d1e098cac910f29fc86900a5f3acbf7f899099dcf7e7fa8f95d8cbadbeb835b5"
+    },
+    {
+      "path": "birthday-world/public/world/lightmaps/ending-indirect.exr",
+      "bytes": 751147,
+      "sha256": "94c80ba0a8755a549ff3bca60cbc9223952564299e2154827f1d3c4862879343"
+    },
+    {
+      "path": "birthday-world/public/world/lightmaps/lightmaps.json",
+      "bytes": 1671,
+      "sha256": "f586513eb90341486096580d6037ae82572138977fa240c18aaa7815ca46fc3a"
+    },
+    {
+      "path": "birthday-world/public/world/lightmaps/salon-indirect.exr",
+      "bytes": 1820425,
+      "sha256": "61747149614111b62d05f88c017139716c0ba7b322cfacd001f4fdf79bed2ebc"
+    },
+    {
+      "path": "birthday-world/public/world/optimization-report.json",
+      "bytes": 5074,
+      "sha256": "d8198224296a8e98127dd0138f7244c875157227885a6bfa6aca522b83264586"
+    },
+    {
+      "path": "birthday-world/public/world/phase3-manifest.json",
+      "bytes": 3903,
+      "sha256": "d93baf72a184cdee70e8af69c68328a699504f6468610d5e9bb8732b8b118624"
+    },
+    {
+      "path": "birthday-world/public/world/salon.glb",
+      "bytes": 14142744,
+      "sha256": "72b80ad6eb7ed652fe1ada11ccd5ae28576747d643d1bf13047448ca9d674101"
+    },
+    {
+      "path": "birthday-world/public/world/selection.json",
+      "bytes": 76910,
+      "sha256": "bbddb851671c06520705297414da802cce2312e057d955007c820746f8af5c87"
+    },
+    {
+      "path": "birthday-world/qa/QA-report.md",
+      "bytes": 6584,
+      "sha256": "1f1d4a01443f14e3d879992a40856c0674b55bcec644703de03068095160a3ec"
+    },
+    {
+      "path": "birthday-world/qa/README.md",
+      "bytes": 3115,
+      "sha256": "894ab237c0a1b8f433f8542c205241a4f184ad334e226e4f0b809f148cf59e34"
+    },
+    {
+      "path": "birthday-world/qa/asset-validation.json",
+      "bytes": 3659,
+      "sha256": "05e4217057a3916dd0ae53f04b3e179d9882995fbda3f13e6214a5d04cdf39f8"
+    },
+    {
+      "path": "birthday-world/qa/browser-asset-audit.json",
+      "bytes": 1774,
+      "sha256": "b7aeae9d32b3d680e3085a19646e2260d9905a095b3406a47ed2995393f7d0c1"
+    },
+    {
+      "path": "birthday-world/qa/browser-control-flow-v3.json",
+      "bytes": 854,
+      "sha256": "bddc90b79534beeecfa105973d6a43e7af0691263f877e7e10022481f8697a04"
+    },
+    {
+      "path": "birthday-world/qa/browser-results.json",
+      "bytes": 1961,
+      "sha256": "c5318ac9d1de705c1f51e0a13b5f6bc2b8f09d71e103f78abe35079508a22669"
+    },
+    {
+      "path": "birthday-world/qa/browser-webgl-blocker.jpg",
+      "bytes": 35383,
+      "sha256": "30e28a03cf273e21e66a36d9132cc588ff3bd404fe538523f92c10cdd3b5125f"
+    },
+    {
+      "path": "birthday-world/qa/continuity.test.ts",
+      "bytes": 2783,
+      "sha256": "5595234d2f6548cea36e42d70e628c452036fe0da13ba92016f66183c79b52cf"
+    },
+    {
+      "path": "birthday-world/qa/controller-test-results.txt",
+      "bytes": 1585,
+      "sha256": "5e50862e5b423841ee705890bb7cabe7c523c33d20c176f4508dd3d281fb3fe7"
+    },
+    {
+      "path": "birthday-world/qa/date-and-loading.test.ts",
+      "bytes": 2313,
+      "sha256": "4139bb2c3e64ad209442fc1bd81f66791f3b3ea7c58994f10b35042cf9724ec1"
+    },
+    {
+      "path": "birthday-world/qa/evidence/browser-assets.jpg",
+      "bytes": 69026,
+      "sha256": "4f36cf3d7fb9969927d16a77ef13156cac5fb01c8f8983122feb0f427cb53cbc"
+    },
+    {
+      "path": "birthday-world/qa/evidence/mobile-ui-letter.jpg",
+      "bytes": 42469,
+      "sha256": "da7d320107b4b4521935dd53de61d426f132033a3ec22c6e0753a15a1ce4d340"
+    },
+    {
+      "path": "birthday-world/qa/evidence/mobile-ui-wish.jpg",
+      "bytes": 41882,
+      "sha256": "d84e9f9e653e08f78e0342eebb5799fd0059621b3a35901ef75800ce14938511"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-celebration-recorded-frame.png",
+      "bytes": 213814,
+      "sha256": "f5f1d1922a4e3cfc2309355f4a5c7be98e15883bc0fd774e80452d19b6228424"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-celebration-recording.json",
+      "bytes": 518,
+      "sha256": "d9ba822f35ba4cd4ae44e7982c492fa03f141fe70119f7461517d10e47653c94"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-date-desktop.jpg",
+      "bytes": 109689,
+      "sha256": "c8012abf7772cb5d230eb86c937cc84b77527c7d8ff66baa1ede1a3bf723d25a"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-date-mobile.jpg",
+      "bytes": 53061,
+      "sha256": "e7f1fdbeaed3776a0dae6efb9b3d83ea2f6bd447714dfeab604cb33d3f9df41b"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-date-reduced.jpg",
+      "bytes": 50234,
+      "sha256": "3a65f6835e907c3ea11ba09e501b87acb7a037f489582cb678356970f39ca05a"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ending-state.json",
+      "bytes": 736,
+      "sha256": "86f18f94a882fddcf27440249c8b26900c71b6c1755366f1f07d956a6c44a785"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-mobile-ending-state.json",
+      "bytes": 720,
+      "sha256": "0457708c4fdcd6ee1c4aedc8510b3671c97047b7637b286371915b3de856761c"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-mobile-replay-state.json",
+      "bytes": 611,
+      "sha256": "a659f32ea53000a3e7096d5f140c7b808afd7ad4366688efc27a6110aaab17fd"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-replay-state.json",
+      "bytes": 611,
+      "sha256": "a659f32ea53000a3e7096d5f140c7b808afd7ad4366688efc27a6110aaab17fd"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-ending.jpg",
+      "bytes": 33607,
+      "sha256": "c9e574efeeadaaad8186c1f1de365e5491a1dd75928d25947b17ac8730c66766"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-letter-desktop.jpg",
+      "bytes": 43553,
+      "sha256": "ac4e7fa8f136cd3b7c0c17338f9d060cbe47b8bb1c9b8a4839f7a64852717f5f"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-ending.jpg",
+      "bytes": 31319,
+      "sha256": "6ed268a6b6ccb018c74473ca65d415997f2e09bbc8d756f7be4a6661f5823614"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-free-look.jpg",
+      "bytes": 35113,
+      "sha256": "8ad23af92fa04fdbb4fdcaa688094d7d8ec4f380f11083cb3cfb91983945949d"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-gift-inspection.jpg",
+      "bytes": 34822,
+      "sha256": "0d68f47fc69cda7f950e342e62b4c04528c3e00e9de3b86065bf8f1053e1f830"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-letter.jpg",
+      "bytes": 42176,
+      "sha256": "c4f81b160a6ffb969e8f100a0edd8dbfd7d85684f615a6c478d64b8bdfd6d933"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-opening.jpg",
+      "bytes": 36389,
+      "sha256": "733262823d9b864c07eb2ce221057ff103434439c16a2163ff8145ea88421d66"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-mobile-wish.jpg",
+      "bytes": 41214,
+      "sha256": "c5da82f54073e62561240b2c7d1bfc41783ad694d0a4ff85f3ed7c1c122412ea"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-portrait.jpg",
+      "bytes": 73410,
+      "sha256": "3f201983d8f7879214e524f0eaff0323876a7469f2880cada740c2f58aa2095b"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-ui-received-card.jpg",
+      "bytes": 35085,
+      "sha256": "fc8c68525db9f9b7a7f441ef3bbb41ae45e73587d1be9337a5807a4ac6eaf3bd"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-webgl-errors.json",
+      "bytes": 3096,
+      "sha256": "b19e16c6ae89155ad00aead6b181b62fa2de0ee6212ff3d50dc347811b4f110a"
+    },
+    {
+      "path": "birthday-world/qa/evidence/phase3-webgl-review-blocker.jpg",
+      "bytes": 38038,
+      "sha256": "ab5f0777f52de56af2f9a09585aa89e7b89d5bac2b0ee53d909afcd7718a32c6"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v3-browser-assets.jpg",
+      "bytes": 68868,
+      "sha256": "c06ab7ec9d527ead798e3bdc78172ed403d55eb48c5a6a648a1d5236c1989e6e"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v3-mobile-letter.jpg",
+      "bytes": 43470,
+      "sha256": "9de442457134c86353d388c3edd7b9e11aebc85b4fb4b8d83ffbac94fbfedaaf"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v3-mobile-wish.jpg",
+      "bytes": 42869,
+      "sha256": "ad14889419dc612354433a638bc2e16d3a0f14e08d451708a7c3f6df8333235e"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v4-date-desktop.jpg",
+      "bytes": 90193,
+      "sha256": "7566e9a50f6e29e1d378b73596ac1c5234d55abc4380f139a632807509f48d4c"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v4-date-mobile.jpg",
+      "bytes": 46961,
+      "sha256": "9c47e918e629b596ca36db82d01de211056b3605ad07aa66b6d145bb94559e15"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v4-date-reduced.jpg",
+      "bytes": 46179,
+      "sha256": "61f07e7cd265c86da8f4b99bc39929a0b1edfa8c6dab1ad415a2fda8a2bf7e8e"
+    },
+    {
+      "path": "birthday-world/qa/evidence/v4-integrated-date.jpg",
+      "bytes": 49279,
+      "sha256": "2b1368a78d648ce40df26671773cda27602c768b41c21be9262d36c4044b76d8"
+    },
+    {
+      "path": "birthday-world/qa/evidence/webgl-blocker.jpg",
+      "bytes": 35390,
+      "sha256": "aa8577a54749a72eb0b56186c9c379c60cf6f89fd6ced57ca4673f98195cd3b9"
+    },
+    {
+      "path": "birthday-world/qa/graphics-environment-errors.json",
+      "bytes": 3646,
+      "sha256": "ad05480b8d110007eeeb2ebbc94750ef77335b25ab1813b482fae49e700b391f"
+    },
+    {
+      "path": "birthday-world/qa/journey.test.ts",
+      "bytes": 1769,
+      "sha256": "baad24b2c1373967e02655c4ce3f88b0bbca56ede25624f0232e53429f3aa883"
+    },
+    {
+      "path": "birthday-world/qa/mobile-ui-fixture.jpg",
+      "bytes": 34421,
+      "sha256": "67f174e0166ad2830a968d96517b34e8560638cda8a2630484c269ac07b8cd36"
+    },
+    {
+      "path": "birthday-world/qa/phase3-asset-validation.json",
+      "bytes": 4028,
+      "sha256": "190c56179f40f0018d1cfb5ac68a8788808982f188d622d3f6dcd913629ed9e9"
+    },
+    {
+      "path": "birthday-world/qa/phase3-browser-asset-audit.json",
+      "bytes": 3442,
+      "sha256": "1a880c9df2074cee781e02fce0afa9ba503c274fdefb81aec1be79560f03afd9"
+    },
+    {
+      "path": "birthday-world/qa/phase3-build-validation.json",
+      "bytes": 809,
+      "sha256": "46edd6b1cc81826bf17ed9ab43e3506eebd84ecaf558dfff0b446d2da051f71d"
+    },
+    {
+      "path": "birthday-world/qa/phase3-check-assets.log",
+      "bytes": 4029,
+      "sha256": "60a95f3289a306b16a22004c75e00bc638b197ffeea33543c6569c74d6fb59fc"
+    },
+    {
+      "path": "birthday-world/qa/phase3-controller-tests.txt",
+      "bytes": 2500,
+      "sha256": "9cb0bd83a816445b456a3a2414b94742d02ae3738cb7a696ef1f8eb826552875"
+    },
+    {
+      "path": "birthday-world/qa/phase3-gltf-validation.json",
+      "bytes": 197108,
+      "sha256": "cd24bda16266f389463c7ecbabf6daef49ce08c00af6a8fd58d7f4d19d4f352a"
+    },
+    {
+      "path": "birthday-world/qa/phase3-preservation.json",
+      "bytes": 875,
+      "sha256": "19a43f547bf02f4db72ef00b988a999f737ef2a6774cb023fb24d795ed38db96"
+    },
+    {
+      "path": "birthday-world/qa/phase3-report.md",
+      "bytes": 9005,
+      "sha256": "117e57acc7255400909d7c4d9eb5fb5f44703a3df9bd260a1dac90480fc3c696"
+    },
+    {
+      "path": "birthday-world/qa/phase3-typecheck.txt",
+      "bytes": 117,
+      "sha256": "90daeec93adc6c37b7507ca212e2ed8aec34eb9f5f930c4be3ffa19a598b89ba"
+    },
+    {
+      "path": "birthday-world/qa/phase3-vocal-transcription.json",
+      "bytes": 264,
+      "sha256": "797ec0a6d4d5e9880702989157919674dbf055f94d1d0e12bd7cbee11c51386a"
+    },
+    {
+      "path": "birthday-world/qa/phase3.test.ts",
+      "bytes": 6548,
+      "sha256": "48bd5abb8f6baa6ca349a84939dd5ed5510899c8828955c18dd4a780ec828a00"
+    },
+    {
+      "path": "birthday-world/qa/revision-4-report.md",
+      "bytes": 8918,
+      "sha256": "90ad0e22ae06f267e1467af3d1544055e61436fd0b44fa03383734c2abd66c57"
+    },
+    {
+      "path": "birthday-world/qa/revision-report.md",
+      "bytes": 5407,
+      "sha256": "f810a4292f0b72b1a68d342d2500963051c8f2e9554c8b1561e6abbaea4109c0"
+    },
+    {
+      "path": "birthday-world/qa/source-preservation.json",
+      "bytes": 221,
+      "sha256": "81c47bea0f266672c1f72fa21cbf559d6f17dcb8820c30d2469a5653339a9f54"
+    },
+    {
+      "path": "birthday-world/qa/source-selection-audit.json",
+      "bytes": 335,
+      "sha256": "8d771040e8d9bdbc07ae3e98c9792c7a67a66eb1e165ff0ad280ce4278dee9d4"
+    },
+    {
+      "path": "birthday-world/qa/v4-browser-asset-audit.json",
+      "bytes": 1999,
+      "sha256": "4e733ebe84f9e65296d5e0db1f6d8f2b5a676595622ad0dbafdfd975d9af1fba"
+    },
+    {
+      "path": "birthday-world/qa/v4-browser-flow.json",
+      "bytes": 965,
+      "sha256": "b8faa3bb9b0674a3d09c3bd115ebfb6c783c9afe0123b8ec342ecb303985c164"
+    },
+    {
+      "path": "birthday-world/qa/v4-quality-preservation.json",
+      "bytes": 1317,
+      "sha256": "fd07ab1dc8f8802723afaab2df265215114ebcbeb3664f24c14bb529024790a9"
+    },
+    {
+      "path": "birthday-world/qa/visual-regressions.test.ts",
+      "bytes": 3141,
+      "sha256": "53ec5426c5be601c5702c8ac10537e13e609c4bfe4055f1298b9efaa49023c67"
+    },
+    {
+      "path": "birthday-world/scripts/build-verified.sh",
+      "bytes": 661,
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+    },
+    {
+      "path": "birthday-world/scripts/execution-profile.mjs",
+      "bytes": 624,
+      "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+    },
+    {
+      "path": "birthday-world/scripts/install-ci.mjs",
+      "bytes": 1616,
+      "sha256": "63f2c4589b740184b68a0c9214fe92439b6f7d1fbfbec9ef552fd745b0a9c6cc"
+    },
+    {
+      "path": "birthday-world/scripts/install-ci.sh",
+      "bytes": 7494,
+      "sha256": "5161648b51012c7351a4a975c6ed05a67cc1f1d9dbabc4381708d1005d8c4edb"
+    },
+    {
+      "path": "birthday-world/scripts/install-pnpm.sh",
+      "bytes": 9024,
+      "sha256": "db980d931c7d1fb6d64dfede2fc698227d9bbd3bbb94f50a8966d9eb980bf10c"
+    },
+    {
+      "path": "birthday-world/scripts/pnpm-install.mjs",
+      "bytes": 10642,
+      "sha256": "380309d06af721775377f805e90bbba27118e91bf67cd6c87ca59b9ef56453e8"
+    },
+    {
+      "path": "birthday-world/scripts/run-framework.mjs",
+      "bytes": 993,
+      "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+    },
+    {
+      "path": "birthday-world/scripts/sites-env.mjs",
+      "bytes": 906,
+      "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88"
+    },
+    {
+      "path": "birthday-world/scripts/sites-env.sh",
+      "bytes": 1530,
+      "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+    },
+    {
+      "path": "birthday-world/tools/audio/prepare-birthday.sh",
+      "bytes": 525,
+      "sha256": "ee1f442ca32ec76f9f828d6444d0b14bac89194ac43919a3c71af64a3fedb033"
+    },
+    {
+      "path": "birthday-world/tools/blender/connected_visibility.py",
+      "bytes": 2039,
+      "sha256": "7d61982b289f251a9b646bfe6568189889f24bb76640d4fb76d41312f2f4982e"
+    },
+    {
+      "path": "birthday-world/tools/blender/finalize_world_v2.py",
+      "bytes": 4263,
+      "sha256": "d13eec3045083ab68b7f15699f5eeadc0b045f0129dfd6588823201d02d80bfd"
+    },
+    {
+      "path": "birthday-world/tools/blender/finish_world_v2.py",
+      "bytes": 7330,
+      "sha256": "b6e8fac71bc762b9a5bfd78662d9884a7496a52cd83d9cf6a495383ec9b88e88"
+    },
+    {
+      "path": "birthday-world/tools/blender/fix_rendering_v3.py",
+      "bytes": 3597,
+      "sha256": "0623375144e20acbebb79beb750937efb49edaa9a8444972ef91632a917cb02e"
+    },
+    {
+      "path": "birthday-world/tools/blender/make_letter_print.py",
+      "bytes": 1314,
+      "sha256": "2da7086622e284c72c95b85ab1f044461480c1564aeb4009be91734b0c858cbc"
+    },
+    {
+      "path": "birthday-world/tools/blender/refine_world_v2.py",
+      "bytes": 8409,
+      "sha256": "eabd55d271fea034be9e18b8d5a168de1bfc221911b9c9056fdb28ba53c505cb"
+    },
+    {
+      "path": "birthday-world/tools/blender/render_review.py",
+      "bytes": 1161,
+      "sha256": "ddf53454c08ae9bcf818e4347faf1401c3e079708ad59c0116546c9af70e97db"
+    },
+    {
+      "path": "birthday-world/tools/export/export_world.py",
+      "bytes": 13178,
+      "sha256": "14777ea8cf41e79450e6549e97d579946c6c0abdd53e08ec262931b2cf7f06ae"
+    },
+    {
+      "path": "birthday-world/tools/export/optimize.mjs",
+      "bytes": 4240,
+      "sha256": "f7501d2bbfa841e1901b2045f86ce5c7a1caf5c9c590b1bc6738c186efd7bf08"
+    },
+    {
+      "path": "birthday-world/tools/export/refresh_camera_route.py",
+      "bytes": 2893,
+      "sha256": "a14959cdbba10cce12a9e37a65d4a5f246c61235275688a9d4477a98d885d405"
+    },
+    {
+      "path": "birthday-world/tools/export/requirements.txt",
+      "bytes": 64,
+      "sha256": "8b2776d1dbc15b5233e53badde69ed9be944a99c3c446004709ee79236f7dc2a"
+    },
+    {
+      "path": "birthday-world/tools/export/validate-assets.mjs",
+      "bytes": 3313,
+      "sha256": "7c5f147eb304416d48ad8819acf31aaf5b4f546d210dfd6a9ecdf0943e7ecd08"
+    },
+    {
+      "path": "birthday-world/tools/qa/build_revision_review.py",
+      "bytes": 10666,
+      "sha256": "331c24d79eec87469e7d01c89c314b78600e2a34faf95633e650e33fb8856c30"
+    },
+    {
+      "path": "birthday-world/tools/qa/build_v4_review.py",
+      "bytes": 16470,
+      "sha256": "135f777f7b4a4f3564b8f92288b1a6bd9bd6cf6a5b62b8ec5578875c2038f028"
+    },
+    {
+      "path": "birthday-world/tsconfig.json",
+      "bytes": 840,
+      "sha256": "edfaad4fe7997d45624f3ddafd881f54fd7c7fa2e45df58be48adb56243ac0b9"
+    },
+    {
+      "path": "birthday-world/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "birthday-world/vendor/shadcn-tailwind-4.13.0.css",
+      "bytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    },
+    {
+      "path": "birthday-world/vite.config.ts",
+      "bytes": 2240,
+      "sha256": "4b9d8a6b14fd155328847bc6cd063c6bf44c58c64de8d46911cdf0ede611e367"
+    }
+  ]
+}

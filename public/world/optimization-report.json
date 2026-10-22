@@ -1,0 +1,178 @@
+{
+  "revision": "2026-09-17-room-smoothness",
+  "totalGLBBytes": 49375324,
+  "groups": {
+    "bedroom": {
+      "bytes": 7488752,
+      "sha256": "7d0439d711d0f7f8406c2d92ed718757b88d25958f1a7650eb643870b6fd3321",
+      "nodes": 182,
+      "meshes": 61,
+      "materials": 34,
+      "triangles": 454616,
+      "primitiveDraws": 68,
+      "texturePixels": 26835968,
+      "textureRGBAWithMipsBytes": 143125163,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_materials_sheen",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "garden": {
+      "bytes": 11032104,
+      "sha256": "d3b93c593ddce648e954c754250dae3d39ca81b19df68f64527fb64cbdff0d07",
+      "nodes": 481,
+      "meshes": 91,
+      "materials": 45,
+      "triangles": 1006954,
+      "primitiveDraws": 168,
+      "texturePixels": 9699328,
+      "textureRGBAWithMipsBytes": 51729749,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "door": {
+      "bytes": 1947752,
+      "sha256": "333202d17e5f61f4b691d036101b581759d259d578730e71112dffaf6e80a801",
+      "nodes": 31,
+      "meshes": 22,
+      "materials": 5,
+      "triangles": 5780,
+      "primitiveDraws": 29,
+      "texturePixels": 6291456,
+      "textureRGBAWithMipsBytes": 33554432,
+      "extensions": [
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "salon": {
+      "bytes": 14496004,
+      "sha256": "80ad45aebae2f02e0a2b3eb174f1e998457b3f5118db3b14e2e3d333a20fde6d",
+      "nodes": 554,
+      "meshes": 53,
+      "materials": 41,
+      "triangles": 1031062,
+      "primitiveDraws": 92,
+      "texturePixels": 29097984,
+      "textureRGBAWithMipsBytes": 155189248,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_materials_sheen",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "exit-door": {
+      "bytes": 367252,
+      "sha256": "19b3d8dc555b8fe9eadce6df4fe7bddef8f678f6ffaf78e510b879f5eb70d09e",
+      "nodes": 118,
+      "meshes": 29,
+      "materials": 4,
+      "triangles": 25096,
+      "primitiveDraws": 114,
+      "texturePixels": 1572864,
+      "textureRGBAWithMipsBytes": 8388608,
+      "extensions": [
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_materials_ior",
+        "KHR_materials_transmission",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "courtyard": {
+      "bytes": 3103320,
+      "sha256": "53d9713881b8895afacd7fae156672fb750c6e4214562ef1592306736216e298",
+      "nodes": 30,
+      "meshes": 13,
+      "materials": 14,
+      "triangles": 124564,
+      "primitiveDraws": 18,
+      "texturePixels": 12320948,
+      "textureRGBAWithMipsBytes": 65711723,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "gift": {
+      "bytes": 6057500,
+      "sha256": "91e5a596456d7fe71fef0a2717085938ac7713974465a3ae1330eec11e83850f",
+      "nodes": 65,
+      "meshes": 43,
+      "materials": 10,
+      "triangles": 140960,
+      "primitiveDraws": 51,
+      "texturePixels": 15130064,
+      "textureRGBAWithMipsBytes": 80693675,
+      "extensions": [
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_materials_sheen",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "ending": {
+      "bytes": 2033980,
+      "sha256": "7c2f00182583991a57eb1fddcc127b21b280c3b91e1c4f48747ae9883ddbb839",
+      "nodes": 54,
+      "meshes": 10,
+      "materials": 10,
+      "triangles": 77832,
+      "primitiveDraws": 10,
+      "texturePixels": 5939200,
+      "textureRGBAWithMipsBytes": 31675733,
+      "extensions": [
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_materials_sheen"
+      ]
+    },
+    "cake": {
+      "bytes": 2801328,
+      "sha256": "3b18a21f46f026887fa0e2b602c9cf33f19e5f17e58e835d9510f77f691a0fa3",
+      "nodes": 169,
+      "meshes": 7,
+      "materials": 7,
+      "triangles": 451930,
+      "primitiveDraws": 7,
+      "texturePixels": 1114112,
+      "textureRGBAWithMipsBytes": 5941931,
+      "extensions": [
+        "EXT_mesh_gpu_instancing",
+        "EXT_meshopt_compression",
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "flames": {
+      "bytes": 47332,
+      "sha256": "69d71bad363e0c245de78f73f8789e42ac0aed836b9b57687ff6594aa5add7d1",
+      "nodes": 15,
+      "meshes": 3,
+      "materials": 3,
+      "triangles": 3360,
+      "primitiveDraws": 9,
+      "texturePixels": 0,
+      "textureRGBAWithMipsBytes": 0,
+      "extensions": [
+        "EXT_meshopt_compression",
+        "KHR_materials_emissive_strength",
+        "KHR_mesh_quantization"
+      ]
+    }
+  },
+  "lightingBytes": 40953152,
+  "changes": "Preserves the room, curtains, lights, materials and textures. Further attribute-aware cake-only geometry optimization uses the original source asset and the cake-only preset; existing salon runner optimization remains unchanged."
+}

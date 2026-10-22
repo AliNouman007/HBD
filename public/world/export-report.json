@@ -1,0 +1,1228 @@
+{
+  "source": "birthday-world-phase2-export-corrected.blend",
+  "sourceSHA256": "9d7bf50ae78bd12b8d91e99b474d84c780d56c24b844662372c349feb9563efd",
+  "blender": "4.3.0",
+  "materials": {
+    "Brushed_aluminium": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Machined_aluminium_edge": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Keyboard_charcoal": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Rubber_and_ports": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Key_engraving": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Garden_screen": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Webcam_glass": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 board-aligned satin oak \u2022 grain-U": {
+      "maps": {
+        "Base Color": "007-base-color.png",
+        "Roughness": "007-roughness.png",
+        "Normal": "007-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "R01 warm ivory painted joinery": {
+      "maps": {
+        "Base Color": "008-base-color.png",
+        "Roughness": "008-roughness.png",
+        "Normal": "008-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 aged satin brass": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 ivory paper edges": {
+      "maps": {
+        "Base Color": "010-base-color.png",
+        "Roughness": "010-roughness.png",
+        "Normal": "010-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 rose linen broad folds": {
+      "maps": {
+        "Base Color": "011-base-color.png",
+        "Roughness": "011-roughness.png",
+        "Normal": "011-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "R01 ivory washed cotton": {
+      "maps": {
+        "Base Color": "012-base-color.png",
+        "Roughness": "012-roughness.png",
+        "Normal": "012-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "R01 dusty rose woven upholstery": {
+      "maps": {
+        "Base Color": "013-base-color.png",
+        "Roughness": "013-roughness.png",
+        "Normal": "013-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 natural oak satin long grain": {
+      "maps": {
+        "Base Color": "014-base-color.png",
+        "Normal": "014-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "R01 living stems": {
+      "maps": {
+        "Roughness": "015-roughness.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 blush glazed ceramic": {
+      "maps": {
+        "Roughness": "016-roughness.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 lampshade linen transmission": {
+      "maps": {
+        "Base Color": "017-base-color.png",
+        "Roughness": "017-roughness.png",
+        "Normal": "017-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "P2 \u2022 ivory percale": {
+      "maps": {
+        "Base Color": "018-base-color.png",
+        "Roughness": "018-roughness.png",
+        "Normal": "018-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "P2 \u2022 blush washed linen": {
+      "maps": {
+        "Base Color": "019-base-color.png",
+        "Roughness": "019-roughness.png",
+        "Normal": "019-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "R01 sage living leaves": {
+      "maps": {
+        "Roughness": "020-roughness.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "R01 muted botanical ink": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 oatmeal woven rug": {
+      "maps": {
+        "Base Color": "022-base-color.png",
+        "Roughness": "022-roughness.png",
+        "Normal": "022-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 bedroom photographic placeholder": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 warm cotton paper": {
+      "maps": {
+        "Base Color": "024-base-color.png",
+        "Roughness": "024-roughness.png",
+        "Normal": "024-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "P2 \u2022 satin champagne brass": {
+      "maps": {
+        "Base Color": "025-base-color.png",
+        "Roughness": "025-roughness.png",
+        "Normal": "025-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 honey oatmeal plush": {
+      "maps": {
+        "Base Color": "026-base-color.png",
+        "Roughness": "026-roughness.png",
+        "Normal": "026-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "P2 \u2022 cream paw microsuede": {
+      "maps": {
+        "Base Color": "027-base-color.png",
+        "Roughness": "027-roughness.png",
+        "Normal": "027-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 brown glass safety eyes": {
+      "maps": {
+        "Base Color": "028-base-color.png",
+        "Roughness": "028-roughness.png",
+        "Normal": "028-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 cocoa embroidery": {
+      "maps": {
+        "Base Color": "029-base-color.png",
+        "Roughness": "029-roughness.png",
+        "Normal": "029-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 oatmeal matching seam thread": {
+      "maps": {
+        "Base Color": "030-base-color.png",
+        "Roughness": "030-roughness.png",
+        "Normal": "030-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 blush grosgrain": {
+      "maps": {
+        "Base Color": "031-base-color.png",
+        "Roughness": "031-roughness.png",
+        "Normal": "031-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "P2 \u2022 restrained sage ground": {
+      "maps": {
+        "Base Color": "032-base-color.png",
+        "Roughness": "032-roughness.png",
+        "Normal": "032-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 honed warm limestone": {
+      "maps": {
+        "Base Color": "033-base-color.png",
+        "Roughness": "033-roughness.png",
+        "Normal": "033-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 olive bark": {
+      "maps": {
+        "Base Color": "034-base-color.png",
+        "Roughness": "034-roughness.png",
+        "Normal": "034-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 olive leaf 0": {
+      "maps": {
+        "Base Color": "035-base-color.png",
+        "Roughness": "035-roughness.png",
+        "Normal": "035-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "P2 \u2022 olive leaf 1": {
+      "maps": {
+        "Base Color": "036-base-color.png",
+        "Roughness": "036-roughness.png",
+        "Normal": "036-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "P2 \u2022 olive leaf 2": {
+      "maps": {
+        "Base Color": "037-base-color.png",
+        "Roughness": "037-roughness.png",
+        "Normal": "037-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "P2 \u2022 olive leaf 3": {
+      "maps": {
+        "Base Color": "038-base-color.png",
+        "Roughness": "038-roughness.png",
+        "Normal": "038-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "R01 pale blush mineral plaster": {
+      "maps": {
+        "Base Color": "039-base-color.png",
+        "Roughness": "039-roughness.png",
+        "Normal": "039-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "R01 window wall warm ivory": {
+      "maps": {
+        "Base Color": "040-base-color.png",
+        "Roughness": "040-roughness.png",
+        "Normal": "040-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Warm ivory \u2022 lime plaster": {
+      "maps": {
+        "Base Color": "041-base-color.png",
+        "Roughness": "041-roughness.png",
+        "Normal": "041-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 04": {
+      "maps": {
+        "Base Color": "042-base-color.png",
+        "Roughness": "042-roughness.png",
+        "Normal": "042-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 00": {
+      "maps": {
+        "Base Color": "043-base-color.png",
+        "Roughness": "043-roughness.png",
+        "Normal": "043-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 03": {
+      "maps": {
+        "Base Color": "044-base-color.png",
+        "Roughness": "044-roughness.png",
+        "Normal": "044-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 05": {
+      "maps": {
+        "Base Color": "045-base-color.png",
+        "Roughness": "045-roughness.png",
+        "Normal": "045-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 01": {
+      "maps": {
+        "Base Color": "046-base-color.png",
+        "Roughness": "046-roughness.png",
+        "Normal": "046-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged limestone 02": {
+      "maps": {
+        "Base Color": "047-base-color.png",
+        "Roughness": "047-roughness.png",
+        "Normal": "047-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Weathered terracotta 00": {
+      "maps": {
+        "Base Color": "048-base-color.png",
+        "Roughness": "048-roughness.png",
+        "Normal": "048-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Weathered terracotta 03": {
+      "maps": {
+        "Base Color": "049-base-color.png",
+        "Roughness": "049-roughness.png",
+        "Normal": "049-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Weathered terracotta 01": {
+      "maps": {
+        "Base Color": "050-base-color.png",
+        "Roughness": "050-roughness.png",
+        "Normal": "050-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Weathered terracotta 02": {
+      "maps": {
+        "Base Color": "051-base-color.png",
+        "Roughness": "051-roughness.png",
+        "Normal": "051-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Weathered terracotta 04": {
+      "maps": {
+        "Base Color": "052-base-color.png",
+        "Roughness": "052-roughness.png",
+        "Normal": "052-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Aged brushed brass": {
+      "maps": {
+        "Base Color": "053-base-color.png",
+        "Normal": "053-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Lantern frosted glow": {
+      "maps": {
+        "Roughness": "054-roughness.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Earth & gravel": {
+      "maps": {
+        "Base Color": "055-base-color.png",
+        "Normal": "055-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 3": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 4": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Gravel shade 5": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 warm olive bark": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 young bark": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 olive leaf 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 olive leaf 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 olive leaf 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 olive leaf 3": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 silver olive underside": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 rose leaf 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 rose leaf 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 rose leaf 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "V2 \u2022 botanical stems": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 blush petal 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 blush petal 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 blush petal 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 blush petal 3": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 ivory petal 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 ivory petal 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 ivory petal 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 lavender 0": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 lavender 1": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 lavender 2": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 garden earth": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 bed limestone": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V2 \u2022 meadow": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 ivory limewash": {
+      "maps": {
+        "Base Color": "086-base-color.png",
+        "Roughness": "086-roughness.png",
+        "Normal": "086-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Ivory painted oak": {
+      "maps": {
+        "Base Color": "087-base-color.png",
+        "Normal": "087-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "Screw slot dark metal": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 warm ivory trim": {
+      "maps": {
+        "Base Color": "089-base-color.png",
+        "Roughness": "089-roughness.png",
+        "Normal": "089-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 book paper": {
+      "maps": {
+        "Base Color": "090-base-color.png",
+        "Normal": "090-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Book \u2022 warm grey": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Book \u2022 ivory cloth": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "Book \u2022 muted olive": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 original painted landscape": {
+      "maps": {
+        "Base Color": "094-base-color.png",
+        "Roughness": "094-roughness.png",
+        "Normal": "094-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 woven ivory linen": {
+      "maps": {
+        "Base Color": "095-base-color.png",
+        "Normal": "095-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "Salon \u2022 muted rose linen": {
+      "maps": {
+        "Base Color": "096-base-color.png",
+        "Normal": "096-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "Salon \u2022 antique wool rug": {
+      "maps": {
+        "Base Color": "097-base-color.png",
+        "Roughness": "097-roughness.png",
+        "Normal": "097-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 speckled ivory glaze": {
+      "maps": {
+        "Base Color": "098-base-color.png",
+        "Normal": "098-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 fresh stems": {
+      "maps": {
+        "Base Color": "099-base-color.png",
+        "Normal": "099-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Ivory petal 0": {
+      "maps": {
+        "Base Color": "100-base-color.png",
+        "Normal": "100-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Ivory petal 1": {
+      "maps": {
+        "Base Color": "101-base-color.png",
+        "Normal": "101-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Ivory petal 2": {
+      "maps": {
+        "Base Color": "102-base-color.png",
+        "Normal": "102-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Ivory petal 3": {
+      "maps": {
+        "Base Color": "103-base-color.png",
+        "Normal": "103-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Blush petal 0": {
+      "maps": {
+        "Base Color": "104-base-color.png",
+        "Normal": "104-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Blush petal 1": {
+      "maps": {
+        "Base Color": "105-base-color.png",
+        "Normal": "105-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Blush petal 2": {
+      "maps": {
+        "Base Color": "106-base-color.png",
+        "Normal": "106-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Blush petal 3": {
+      "maps": {
+        "Base Color": "107-base-color.png",
+        "Normal": "107-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Champagne petal 0": {
+      "maps": {
+        "Base Color": "108-base-color.png",
+        "Normal": "108-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Champagne petal 1": {
+      "maps": {
+        "Base Color": "109-base-color.png",
+        "Normal": "109-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Champagne petal 2": {
+      "maps": {
+        "Base Color": "110-base-color.png",
+        "Normal": "110-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 Champagne petal 3": {
+      "maps": {
+        "Base Color": "111-base-color.png",
+        "Normal": "111-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Botanical \u2022 living leaf 0": {
+      "maps": {
+        "Base Color": "112-base-color.png",
+        "Normal": "112-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "Botanical \u2022 living leaf 1": {
+      "maps": {
+        "Base Color": "113-base-color.png",
+        "Normal": "113-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "Botanical \u2022 living leaf 2": {
+      "maps": {
+        "Base Color": "114-base-color.png",
+        "Normal": "114-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "Botanical \u2022 living leaf 3": {
+      "maps": {
+        "Base Color": "115-base-color.png",
+        "Normal": "115-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": true
+    },
+    "Hero \u2022 warm ivory painted joinery": {
+      "maps": {
+        "Base Color": "116-base-color.png",
+        "Roughness": "116-roughness.png",
+        "Normal": "116-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Hero \u2022 warm ivory curtain linen": {
+      "maps": {
+        "Base Color": "117-base-color.png",
+        "Roughness": "117-roughness.png",
+        "Normal": "117-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "Hero \u2022 dusty blush woven linen": {
+      "maps": {
+        "Base Color": "118-base-color.png",
+        "Roughness": "118-roughness.png",
+        "Normal": "118-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": true
+    },
+    "Tableware \u2022 softly polished silver": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 natural aged oak": {
+      "maps": {
+        "Base Color": "120-base-color.png",
+        "Roughness": "120-roughness.png",
+        "Normal": "120-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "Hero \u2022 blush glazed ceramic": {
+      "maps": {
+        "Base Color": "121-base-color.png",
+        "Normal": "121-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Salon \u2022 soft ivory limewash": {
+      "maps": {
+        "Base Color": "122-base-color.png",
+        "Roughness": "122-roughness.png",
+        "Normal": "122-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Hero \u2022 aged dark bronze": {
+      "maps": {
+        "Base Color": "123-base-color.png",
+        "Normal": "123-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 neutral thin architectural glass": {
+      "maps": {},
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V3 demo print \u2022 Portrait \u2022 supplied image placeholder \u2022 m": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 received card placeholder print": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 warm planted loam": {
+      "maps": {
+        "Base Color": "127-base-color.png",
+        "Roughness": "127-roughness.png",
+        "Normal": "127-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 muted blush limewash": {
+      "maps": {
+        "Base Color": "128-base-color.png",
+        "Roughness": "128-roughness.png",
+        "Normal": "128-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "Terrace \u2022 softly weathered limestone": {
+      "maps": {
+        "Base Color": "129-base-color.png",
+        "Roughness": "129-roughness.png",
+        "Normal": "129-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 blush cotton wrapping": {
+      "maps": {
+        "Base Color": "130-base-color.png",
+        "Roughness": "130-roughness.png",
+        "Normal": "130-normal.png"
+      },
+      "directImage": false,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "P2 \u2022 ivory box lining": {
+      "maps": {
+        "Base Color": "131-base-color.png",
+        "Roughness": "131-roughness.png",
+        "Normal": "131-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "P2 \u2022 gift personal tag": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "V3 printed cotton \u2022 06 LETTER \u2022 blank cotton sheet \u2014 repl": {
+      "maps": {},
+      "directImage": true,
+      "resolution": 1024,
+      "doubleSided": false
+    },
+    "06 \u2022 river limestone \u2014 mottled matte": {
+      "maps": {
+        "Base Color": "134-base-color.png",
+        "Normal": "134-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "06 \u2022 blush rose petal 0": {
+      "maps": {
+        "Normal": "135-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "06 \u2022 blush rose petal 1": {
+      "maps": {
+        "Normal": "136-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "06 \u2022 blush rose petal 2": {
+      "maps": {
+        "Normal": "137-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "06 \u2022 blush rose petal 3": {
+      "maps": {
+        "Normal": "138-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    },
+    "06 \u2022 blush rose petal 4": {
+      "maps": {
+        "Normal": "139-normal.png"
+      },
+      "directImage": false,
+      "resolution": 512,
+      "doubleSided": false
+    }
+  },
+  "groups": {
+    "bedroom": {
+      "sourceObjects": 825,
+      "nodes": 833,
+      "rawBytes": 59705384,
+      "clip": null
+    },
+    "garden": {
+      "sourceObjects": 601,
+      "nodes": 601,
+      "rawBytes": 37349784,
+      "clip": null
+    },
+    "door": {
+      "sourceObjects": 29,
+      "nodes": 31,
+      "rawBytes": 6274444,
+      "clip": "EntryDoor.Open"
+    },
+    "salon": {
+      "sourceObjects": 610,
+      "nodes": 620,
+      "rawBytes": 66972228,
+      "clip": null
+    },
+    "exit-door": {
+      "sourceObjects": 114,
+      "nodes": 118,
+      "rawBytes": 2100704,
+      "clip": "ExitDoor.Open"
+    },
+    "courtyard": {
+      "sourceObjects": 33,
+      "nodes": 35,
+      "rawBytes": 14009720,
+      "clip": null
+    },
+    "gift": {
+      "sourceObjects": 51,
+      "nodes": 57,
+      "rawBytes": 20119580,
+      "clip": "Gift.Unwrap"
+    },
+    "ending": {
+      "sourceObjects": 54,
+      "nodes": 54,
+      "rawBytes": 5888364,
+      "clip": null
+    }
+  },
+  "bakeFailures": [],
+  "coordinateSystem": "glTF Y-up metres",
+  "incrementalSources": [
+    {
+      "groups": [
+        "gift"
+      ],
+      "source": "birthday-world-phase2-web-final.blend",
+      "sha256": "a180a79fde536a3e16e8653aad244692de67c3f5b0a6f87ce4d3257e68f17f90"
+    }
+  ],
+  "phase3": {
+    "bedroom": "Re-exported from separate Phase 3 web Blender copy, no bedroom teddy",
+    "otherGroups": "Unchanged Phase 2 final exports",
+    "giftTeddy": "Preserved",
+    "lightmaps": "Bedroom rebaked; all maps ZIP half float"
+  }
+}

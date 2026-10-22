@@ -1,0 +1,52 @@
+{
+  "mode": "UI-only journey; WebGL disabled",
+  "desktopViewport": [
+    1363,
+    936
+  ],
+  "door": {
+    "gateProgress": 0.32,
+    "releasedProgress": 0.32,
+    "doorOpen": true
+  },
+  "wish": {
+    "microphoneDenialFixture": true,
+    "tapFallback": true
+  },
+  "date": {
+    "observedPhase": "celebration",
+    "progress": 0.56,
+    "extinguished": true,
+    "continueControlVisible": true,
+    "releaseProgress": 0.56
+  },
+  "reverseAfterDate": {
+    "progress": 0.542,
+    "extinguished": true
+  },
+  "memories": {
+    "observedProgress": 0.81399,
+    "scene": 5
+  },
+  "letter": {
+    "progress": 0.96,
+    "readablePanel": true
+  },
+  "endingReached": true,
+  "replay": {
+    "phase": "ready",
+    "progress": 0,
+    "doorOpen": false,
+    "extinguished": false
+  },
+  "dateComposition": {
+    "desktop": true,
+    "portraitViewport": [
+      390,
+      844
+    ],
+    "reducedMotion": true
+  },
+  "liveMicrophoneTested": false,
+  "worldRendered": false
+}

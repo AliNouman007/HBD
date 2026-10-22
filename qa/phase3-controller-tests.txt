@@ -1,0 +1,35 @@
+✔ actual exported camera is continuous at every travel boundary except the portal (3.216432ms)
+✔ completed door and wish hold exactly the same camera pose on release (1.393938ms)
+✔ wheel bursts accelerate and settle without bypassing or retaining gate input (11.59036ms)
+✔ all three wick and short smoke centres fit the actual desktop and mobile wish camera (0.5514ms)
+✔ portal image retains viewport pixel density on desktop and mobile (0.8718ms)
+✔ the date reveal cannot be skipped while forming or repeated by reverse input (1.377042ms)
+✔ date auto-completes without input and releases at the unchanged camera pose (0.373648ms)
+✔ budgeted texture preparation yields and preserves every item in order (1.043239ms)
+✔ rapid input cannot bypass door; event does not retain scroll (11.855809ms)
+✔ wish, denied microphone fallback, reverse and replay preserve event rules (12.115035ms)
+✔ streaming gate discards queued input and requires fresh travel (7.223307ms)
+✔ the entry gate waits for the complete interior assets (0.154174ms)
+✔ independent second door cannot unlock the wish or retain input (0.334217ms)
+✔ inspection preserves position, blocks travel, and returns without a queued jump (1.867047ms)
+✔ gift opening stays on its camera anchor, supports partial reverse and inspect pause (0.721339ms)
+✔ hidden-tab suspension freezes timed events and ignores input (0.486329ms)
+✔ personal configuration retains the correct recipient and separate card slot (1.262478ms)
+✔ gift inspection turns around the glTF Y-up axis without rolling the teddy (44.290549ms)
+✔ idle zero-delta events do not cancel the accessible gift auto-open button (1.884897ms)
+✔ indirect illumination does not leak through shared wood materials onto unbaked props (14.814619ms)
+✔ shared image lifetime survives disposal of an earlier staged scene (10.231343ms)
+✔ sanitized glTF door and flame control names still resolve (1.110264ms)
+✔ an older exported portal without UVs receives all four texture corners (1.692814ms)
+✔ portal display covers both desktop and portrait viewports at the cut (0.290816ms)
+✔ three visible smoke plumes and zero flame lights persist during the held wish (2.901468ms)
+✔ camera gate remains locked while the longer smoke beat is visible (1.093558ms)
+✔ letter gate holds the authored close view without skipping ahead (0.188036ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 261.614829

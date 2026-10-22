@@ -1,0 +1,50 @@
+[
+  {
+    "file": "bedroom.glb",
+    "bytes": 2777844,
+    "sha256": "dd2dc239fc005bb0dda9db10f05ec9fd27c8fe0f40199f83a2e8c118c4613462",
+    "identicalToV3": true
+  },
+  {
+    "file": "cake.glb",
+    "bytes": 4219792,
+    "sha256": "5c7011369d08e0513e6ef8d9a1437f3a186e370dc5040ee5c1135b77e1be1252",
+    "identicalToV3": true
+  },
+  {
+    "file": "door.glb",
+    "bytes": 126820,
+    "sha256": "f3400b91ddefc11faf028b6740e8676ffb64b62dc74db69d4bb0ba408c1a58b9",
+    "identicalToV3": true
+  },
+  {
+    "file": "ending.glb",
+    "bytes": 3678100,
+    "sha256": "13969182b858bbb3aed15f7df4ee63b08ff183ee176693f82cbc7c5f9537602d",
+    "identicalToV3": true
+  },
+  {
+    "file": "flames.glb",
+    "bytes": 47332,
+    "sha256": "69d71bad363e0c245de78f73f8789e42ac0aed836b9b57687ff6594aa5add7d1",
+    "identicalToV3": true
+  },
+  {
+    "file": "garden.glb",
+    "bytes": 14928664,
+    "sha256": "bff0825eacb0967e1e3161a245fae53704e3d8aab619bd7af9d57db2a286b4c2",
+    "identicalToV3": true
+  },
+  {
+    "file": "salon.glb",
+    "bytes": 7050484,
+    "sha256": "a60beff7614f7717af639dad1e7ef2e71b131139c07a02e52c8b3fddba10bfd9",
+    "identicalToV3": true
+  },
+  {
+    "file": "terrace.glb",
+    "bytes": 6100036,
+    "sha256": "dcb248be98bb68ddba31870142a386c44fdb9e0f29243f9826776bbfd92c2a10",
+    "identicalToV3": true
+  }
+]

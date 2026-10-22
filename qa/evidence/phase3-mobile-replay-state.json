@@ -1,0 +1,32 @@
+{
+  "phase": "ready",
+  "mode": "journey",
+  "progress": 0,
+  "doorOpen": false,
+  "exitDoorOpen": false,
+  "extinguished": false,
+  "doorT": 0,
+  "exitDoorT": 0,
+  "wishT": 0,
+  "celebrationT": 0,
+  "celebrationSeen": false,
+  "giftT": 0,
+  "giftOpened": false,
+  "endingT": 0,
+  "scene": 1,
+  "error": null,
+  "assetBlocked": false,
+  "revision": 1,
+  "audio": {
+    "unlocked": false,
+    "muted": false,
+    "state": "not-created",
+    "micDucked": false,
+    "recordingLoaded": false,
+    "activeSources": 0,
+    "oneShots": 0,
+    "cues": [],
+    "error": ""
+  },
+  "fixture": "UI only; no 3D rendering"
+}

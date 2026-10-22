@@ -1,0 +1,95 @@
+[
+  {
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "viewport": [
+        1363,
+        936
+      ],
+      "devicePixelRatio": 1,
+      "webglRendererCreated": false
+    }
+  },
+  {
+    "asset": "bedroom",
+    "loaded": true,
+    "loadMs": 182,
+    "portalFound": true,
+    "portalUVRetained": true,
+    "portalOriginOffsetMetres": 0,
+    "portalDirectionAlignment": 1
+  },
+  {
+    "asset": "garden",
+    "loaded": true,
+    "loadMs": 685
+  },
+  {
+    "asset": "door",
+    "loaded": true,
+    "loadMs": 43,
+    "closedDoorHit": true,
+    "hingeFound": true,
+    "handleFound": true,
+    "panelTravelMetres": 1.104,
+    "openDoorBlocksCenter": false
+  },
+  {
+    "asset": "salon",
+    "loaded": true,
+    "loadMs": 293
+  },
+  {
+    "asset": "cake",
+    "loaded": true,
+    "loadMs": 170,
+    "presentDuringDoorApproach": true,
+    "projectedCentreAtOpenDoor": [
+      -0.242,
+      -0.191,
+      0.996
+    ]
+  },
+  {
+    "asset": "flames",
+    "loaded": true,
+    "loadMs": 36
+  },
+  {
+    "asset": "terrace",
+    "loaded": true,
+    "loadMs": 194,
+    "imageSlots": 4,
+    "allImageInsertsVisible": true,
+    "demoImagesApplied": true,
+    "portraitReveal": [
+      {
+        "frame": 1450,
+        "centreInViewport": false
+      },
+      {
+        "frame": 1510,
+        "centreInViewport": true
+      },
+      {
+        "frame": 1600,
+        "centreInViewport": true
+      },
+      {
+        "frame": 1640,
+        "centreInViewport": true
+      },
+      {
+        "frame": 1740,
+        "centreInViewport": true
+      }
+    ]
+  },
+  {
+    "asset": "ending",
+    "loaded": true,
+    "loadMs": 108,
+    "letterFound": true,
+    "woodTextures": 1
+  }
+]

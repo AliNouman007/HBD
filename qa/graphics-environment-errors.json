@@ -1,0 +1,50 @@
+[
+  {
+    "level": "error",
+    "message": "Error: Error creating WebGL context.\n    at new WebGLRenderer (http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc:48456:16)\n    at new WorldEngine (http://terminal.local:4173/lib/world/engine.ts?t=1789379014764:148:20)\n    at init (http://terminal.local:4173/components/world/BirthdayExperience.tsx?t=1789379014764:63:15)",
+    "timestamp": "2026-09-14T09:44:43.877Z",
+    "url": "http://terminal.local:4173/components/world/BirthdayExperience.tsx?t=1789379014764"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Could not create a WebGL context, VENDOR = 0xffff, DEVICE = 0xffff, GL_VENDOR = Disabled, GL_RENDERER = Disabled, Sandboxed = yes, Optimus = no, AMD switchable = no, Reset notification strategy = 0x0000, ErrorMessage = BindToCurrentSequence failed: .",
+    "timestamp": "2026-09-14T09:44:44.945Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Could not create a WebGL context, VENDOR = 0xffff, DEVICE = 0xffff, GL_VENDOR = Disabled, GL_RENDERER = Disabled, Sandboxed = yes, Optimus = no, AMD switchable = no, Reset notification strategy = 0x0000, ErrorMessage = BindToCurrentSequence failed: .",
+    "timestamp": "2026-09-14T09:44:44.945Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: Error creating WebGL context.",
+    "timestamp": "2026-09-14T09:44:44.945Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Could not create a WebGL context, VENDOR = 0xffff, DEVICE = 0xffff, GL_VENDOR = Disabled, GL_RENDERER = Disabled, Sandboxed = yes, Optimus = no, AMD switchable = no, Reset notification strategy = 0x0000, ErrorMessage = BindToCurrentSequence failed: .",
+    "timestamp": "2026-09-14T09:44:44.945Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Could not create a WebGL context, VENDOR = 0xffff, DEVICE = 0xffff, GL_VENDOR = Disabled, GL_RENDERER = Disabled, Sandboxed = yes, Optimus = no, AMD switchable = no, Reset notification strategy = 0x0000, ErrorMessage = BindToCurrentSequence failed: .",
+    "timestamp": "2026-09-14T09:44:44.951Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "THREE.WebGLRenderer: Error creating WebGL context.",
+    "timestamp": "2026-09-14T09:44:44.952Z",
+    "url": "http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc"
+  },
+  {
+    "level": "error",
+    "message": "Error: Error creating WebGL context.\n    at new WebGLRenderer (http://terminal.local:4173/node_modules/.vite/deps/three.module-BTHNL2IN.js?v=9a8030dc:48456:16)\n    at new WorldEngine (http://terminal.local:4173/lib/world/engine.ts?t=1789379084756:148:20)\n    at init (http://terminal.local:4173/components/world/BirthdayExperience.tsx?t=1789379084756:63:15)",
+    "timestamp": "2026-09-14T09:44:44.952Z",
+    "url": "http://terminal.local:4173/components/world/BirthdayExperience.tsx?t=1789379084756"
+  }
+]

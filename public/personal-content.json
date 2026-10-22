@@ -1,0 +1,75 @@
+{
+  "recipientName": "Musfira",
+  "birthday": {
+    "day": 25,
+    "month": 10
+  },
+  "demoContent": false,
+  "portrait": {
+    "image": "/personal/musfira-portrait.jpg",
+    "alt": "An AI-assisted painted portrait imagined for Musfira, wearing a black hijab and a pink floral outfit.",
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "placeholder": false,
+    "transcription": "Since I didn’t have a photo of you to work from, I turned to my imagination and an AI tool to create this painted portrait. I spent time choosing the little details, trying to bring the way I picture you to life. The tool helped make the picture, but the thought, care, and effort behind this little gift are mine. I hope it makes you feel as special as you are to me, Musfira. 🎨💗"
+  },
+  "memories": [],
+  "letter": {
+    "title": "Happy Birthday, Musfira!",
+    "paragraphs": [
+      "Musfira, I made this little world with you in mind. Every surprise, every tiny detail, and every moment here carries the same wish: to make you smile and remind you how special you are to me. I hope you can feel the care tucked into it all. 💗",
+      "For the year ahead, I wish you the kind of happiness that stays in the little things: mornings that feel peaceful, laughter that catches you by surprise, and people who make you feel understood. May the things you quietly hope for find their way to you, one beautiful step at a time.",
+      "On the days that feel a little heavy, I hope you remember this: you deserve kindness, rest, and so many good things. You never have to have everything figured out to be worth celebrating.",
+      "So make a wish, take a little birthday hug from me (if you’d like).",
+      "And carry this thought with you: I’m so glad you’re here, and I’m so glad I got to make this for you. Happy Birthday, Musfira. May this next chapter give you countless reasons to smile. 🎂✨"
+    ],
+    "signature": "With love, and a little birthday magic"
+  },
+  "schemaVersion": 2,
+  "bedroomPhotos": [
+    {
+      "image": "/personal/cream-kitten-daisies.webp",
+      "alt": "A tiny cream kitten sleeping beside daisies on soft oatmeal linen.",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "placeholder": false
+    },
+    {
+      "image": "/personal/teddy-pink-tulips.webp",
+      "alt": "A cuddly teddy bear with a rose ribbon beside pink tulips in warm window light.",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "placeholder": false
+    }
+  ],
+  "receivedCard": {
+    "image": "/personal/received-card.jpg",
+    "alt": "An imagined real-world version of our memory card: the two of us together outdoors, making peace signs.",
+    "placeholder": false,
+    "transcription": "If we brought the scene from the memory card you gave me into the real world, this is how I imagine it would look: the two of us, sharing a little moment and making a memory of our own. That card already meant so much to me. I wanted to give it a place in this world, where I could hold on to the feeling behind it. Little moments, big memories — and this one has a special place in my heart. 📸💞"
+  },
+  "gift": {
+    "tag": "Just for you, Musfira."
+  },
+  "ending": [
+    "Thank you for being here, Musfira.",
+    "I hope this little world made you smile.",
+    "Happy Birthday, Musfira!"
+  ],
+  "audio": {
+    "birthday": "/audio/happy-birthday.mp3",
+    "credits": "/audio/credits.json"
+  }
+}

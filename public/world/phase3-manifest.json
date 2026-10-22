@@ -1,0 +1,130 @@
+{
+  "revision": "2026-09-17-room-smoothness",
+  "files": [
+    {
+      "path": "anchors.json",
+      "bytes": 3646,
+      "sha256": "12ca01fef133e5185d90c9e3e4d96d4ad668f7a95794303f6e82cce852c1d434"
+    },
+    {
+      "path": "bedroom.glb",
+      "bytes": 7488752,
+      "sha256": "7d0439d711d0f7f8406c2d92ed718757b88d25958f1a7650eb643870b6fd3321"
+    },
+    {
+      "path": "cake.glb",
+      "bytes": 2801328,
+      "sha256": "3b18a21f46f026887fa0e2b602c9cf33f19e5f17e58e835d9510f77f691a0fa3"
+    },
+    {
+      "path": "camera-validation.json",
+      "bytes": 1179,
+      "sha256": "0f661ea537ce5d3c8cf5ed3d4c898c00e0d82f5929909ec13aac387b6f99b554"
+    },
+    {
+      "path": "cameras.json",
+      "bytes": 199940,
+      "sha256": "e039f61f203ab3f6bda8c9dd907ce87f141d0016c74d45c286c030e8c2db4561"
+    },
+    {
+      "path": "courtyard.glb",
+      "bytes": 3103320,
+      "sha256": "53d9713881b8895afacd7fae156672fb750c6e4214562ef1592306736216e298"
+    },
+    {
+      "path": "door-event.json",
+      "bytes": 39134,
+      "sha256": "fbc5bcdf709dba9c8a2070c111a611816545788aa0d5765e07a927ae2a822aeb"
+    },
+    {
+      "path": "door.glb",
+      "bytes": 1947752,
+      "sha256": "333202d17e5f61f4b691d036101b581759d259d578730e71112dffaf6e80a801"
+    },
+    {
+      "path": "ending.glb",
+      "bytes": 2033980,
+      "sha256": "7c2f00182583991a57eb1fddcc127b21b280c3b91e1c4f48747ae9883ddbb839"
+    },
+    {
+      "path": "exit-door-event.json",
+      "bytes": 79019,
+      "sha256": "dd3ff2dfb6ac272b3af6f709dd29c372be952d1e1d2ba2fda022e186073ba11e"
+    },
+    {
+      "path": "exit-door.glb",
+      "bytes": 367252,
+      "sha256": "19b3d8dc555b8fe9eadce6df4fe7bddef8f678f6ffaf78e510b879f5eb70d09e"
+    },
+    {
+      "path": "export-report.json",
+      "bytes": 31081,
+      "sha256": "934b5b3996f6ba360a1119864be00bd46b1c1362900901828401b14633d7d5b3"
+    },
+    {
+      "path": "flames.glb",
+      "bytes": 47332,
+      "sha256": "69d71bad363e0c245de78f73f8789e42ac0aed836b9b57687ff6594aa5add7d1"
+    },
+    {
+      "path": "garden.glb",
+      "bytes": 11032104,
+      "sha256": "d3b93c593ddce648e954c754250dae3d39ca81b19df68f64527fb64cbdff0d07"
+    },
+    {
+      "path": "gift-event.json",
+      "bytes": 101892,
+      "sha256": "700a47f5babbbcd61592bc1c84534bb7d868edab1e275adcd03c8dc487cb9d8f"
+    },
+    {
+      "path": "gift.glb",
+      "bytes": 6057500,
+      "sha256": "91e5a596456d7fe71fef0a2717085938ac7713974465a3ae1330eec11e83850f"
+    },
+    {
+      "path": "lighting.json",
+      "bytes": 39496,
+      "sha256": "b1a5c3d4515f6fee5291bba29bf2395307c1f721e5bd31acc065fba14cabb301"
+    },
+    {
+      "path": "lightmaps/bedroom-indirect.exr",
+      "bytes": 1903935,
+      "sha256": "6d4cd7545dad2ca1fe153768ef8b2c06e23e548cca72d675fc7240ed956d6641"
+    },
+    {
+      "path": "lightmaps/courtyard-indirect.exr",
+      "bytes": 2505281,
+      "sha256": "d1e098cac910f29fc86900a5f3acbf7f899099dcf7e7fa8f95d8cbadbeb835b5"
+    },
+    {
+      "path": "lightmaps/ending-indirect.exr",
+      "bytes": 751147,
+      "sha256": "94c80ba0a8755a549ff3bca60cbc9223952564299e2154827f1d3c4862879343"
+    },
+    {
+      "path": "lightmaps/lightmaps.json",
+      "bytes": 1671,
+      "sha256": "f586513eb90341486096580d6037ae82572138977fa240c18aaa7815ca46fc3a"
+    },
+    {
+      "path": "lightmaps/salon-indirect.exr",
+      "bytes": 1820425,
+      "sha256": "61747149614111b62d05f88c017139716c0ba7b322cfacd001f4fdf79bed2ebc"
+    },
+    {
+      "path": "optimization-report.json",
+      "bytes": 5191,
+      "sha256": "99e4186e50ca377f273e7f38c19630e5e4682777dd23b69896bf0e374a3a4254"
+    },
+    {
+      "path": "salon.glb",
+      "bytes": 14496004,
+      "sha256": "80ad45aebae2f02e0a2b3eb174f1e998457b3f5118db3b14e2e3d333a20fde6d"
+    },
+    {
+      "path": "selection.json",
+      "bytes": 76910,
+      "sha256": "bbddb851671c06520705297414da802cce2312e057d955007c820746f8af5c87"
+    }
+  ]
+}

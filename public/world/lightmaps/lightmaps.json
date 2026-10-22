@@ -1,0 +1,56 @@
+{
+  "bedroom": {
+    "file": "bedroom-indirect.exr",
+    "node": "P2.Indirect.bedroom",
+    "uvChannel": 1,
+    "resolution": 1024,
+    "min": 0,
+    "max": 4.103206157684326,
+    "encoding": "linear half-float EXR / ZIP",
+    "contribution": "diffuse indirect only; albedo and direct light excluded",
+    "movingActorsExcluded": true,
+    "suggestedThreeLightMapIntensity": 1,
+    "bytes": 12599632,
+    "rebakedFor": "Bedroom teddy removal",
+    "samples": 24
+  },
+  "salon": {
+    "file": "salon-indirect.exr",
+    "node": "P2.Indirect.salon",
+    "uvChannel": 1,
+    "resolution": 1024,
+    "min": 0,
+    "max": 7.826021671295166,
+    "encoding": "linear half-float EXR / ZIP",
+    "contribution": "diffuse indirect only; albedo and direct light excluded",
+    "movingActorsExcluded": true,
+    "suggestedThreeLightMapIntensity": 1,
+    "bytes": 12599632
+  },
+  "courtyard": {
+    "file": "courtyard-indirect.exr",
+    "node": "P2.Indirect.courtyard",
+    "uvChannel": 1,
+    "resolution": 1024,
+    "min": 0,
+    "max": 7.122982501983643,
+    "encoding": "linear half-float EXR / ZIP",
+    "contribution": "diffuse indirect only; albedo and direct light excluded",
+    "movingActorsExcluded": true,
+    "suggestedThreeLightMapIntensity": 1,
+    "bytes": 12599632
+  },
+  "ending": {
+    "file": "ending-indirect.exr",
+    "node": "P2.Indirect.ending",
+    "uvChannel": 1,
+    "resolution": 512,
+    "min": 0,
+    "max": 2.806497812271118,
+    "encoding": "linear half-float EXR / ZIP",
+    "contribution": "diffuse indirect only; albedo and direct light excluded",
+    "movingActorsExcluded": true,
+    "suggestedThreeLightMapIntensity": 1,
+    "bytes": 3154256
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "Machine transcription check for unintended recipient names. Not an auditory quality review.",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 8.0,
+      "text": " Happy birthday to you, happy birthday to you."
+    }
+  ]
+}
