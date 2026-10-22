@@ -277,3 +277,5 @@
 
 @container(max-width:650px){.power-button{width:124px;height:124px}.power-label{font-size:18px}.finale-prompt{bottom:5%}.bye-card .ending-actions{flex-direction:column;width:100%}}
 @media(prefers-reduced-motion:reduce){.power-button,.power-button.is-holding,.blast-emoji,.blast-title,.blast-power,.blast-flash,.bye-card{animation:none}}
+
+/* Production stylesheet refresh: keep the interactive balloon and finale rules in the deployment bundle. */
