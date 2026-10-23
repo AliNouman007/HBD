@@ -56,6 +56,8 @@ Each photo supports `image`, `alt`, `placeholder`, `fallback` and optional norma
 
 `public/audio/credits.json` documents the public-domain recording and original synthesized sound design. `tools/audio/prepare-birthday.sh` reproduces the short excerpt. Machine transcription found only the two generic opening birthday phrases. Listening quality and the final mix remain unreviewed.
 
+Animated emoji: Google Noto Emoji Animation (https://googlefonts.github.io/noto-emoji-animation/), licensed CC BY 4.0.
+
 ## Asset and rendering contract
 
 `public/world/phase3-manifest.json` hashes the exact integrated asset set. Do not mix earlier cameras or GLBs with these files. There are ten groups: bedroom, garden, door, salon, cake, flames, exit-door, courtyard, gift and ending. The former terrace export is retired.
