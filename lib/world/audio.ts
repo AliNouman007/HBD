@@ -103,6 +103,8 @@ export class Soundscape {
    const source=this.own(this.context.createBufferSource(),false);source.buffer=this.birthday;source.loop=true;source.connect(this.music);source.start();this.birthdaySource=source;
   }
   if(j.wishT>=FLAME_OUT){this.once('puff',()=>this.noiseCue(.32,850,.16));this.once('applause',()=>this.applause())}
+  if(j.wishT>=FLAME_OUT+.1)this.once('wish-rise',()=>[659.25,783.99,987.77,1318.51].forEach((f,i)=>this.note(f,1.4,.022,i*.2)));
+  if(j.phase==='celebration'&&j.celebrationT>.85)this.once('wish-burst',()=>this.chord([1046.5,1318.51,1567.98],.014));
   if(j.phase==='celebration'&&this.unlocked&&!this.muted&&!this.micActive)this.magicDust(j.celebrationT);else this.stopMagic();
   if(j.phase==='exitOpening')this.once('exit-door',()=>this.doorCue(true));
   if(j.exitDoorT>.3)this.once('arrival-chime',()=>this.chord([523.25,659.25,783.99,1046.5],.016));

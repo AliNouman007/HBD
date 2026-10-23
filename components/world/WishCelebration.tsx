@@ -1,0 +1,15 @@
+'use client';
+import {useRef,useState,type CSSProperties,type PointerEvent as ReactPointerEvent} from 'react';
+import {MoveRight} from 'lucide-react';
+import {BirthdayCompanion} from './BirthdaySticker';
+import {CELEBRATION_START,DATE_FORMED,FLAME_OUT} from '@/lib/world/journey';
+
+type Props={phase:'extinguishing'|'celebration';wishT:number;celebrationT:number;reduced:boolean;onContinue:()=>void;onSparkle:()=>void};
+const WORDS=['Every','little','sparkle','is','for','you'];
+const LANTERNS:[number,number,number,number][]=[[8,0,9,14],[18,2.2,11,10],[29,.8,10,18],[41,3.4,12,12],[56,1.4,9,16],[67,2.8,11,11],[78,.4,10,15],[90,3,12,13]];
+
+export default function WishCelebration({phase,wishT,celebrationT,reduced,onContinue,onSparkle}:Props){
+ const t=phase==='extinguishing'?wishT:CELEBRATION_START+celebrationT,out=t<FLAME_OUT,layer=useRef<HTMLDivElement>(null),lastTap=useRef(0),[taps,setTaps]=useState(0);
+ const tap=(e:ReactPointerEvent<HTMLDivElement>)=>{if(phase!=='celebration'||reduced)return;const now=performance.now();if(now-lastTap.current<220)return;lastTap.current=now;const el=layer.current;if(!el)return;const r=el.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;for(let i=0;i<10;i++){const s=document.createElement('span');s.className='wish-spark';s.textContent=i%3?'✦':'✧';const a=i/10*Math.PI*2+Math.random()*.4,d=40+Math.random()*50;s.style.left=`${x}px`;s.style.top=`${y}px`;s.style.setProperty('--dx',`${Math.cos(a)*d}px`);s.style.setProperty('--dy',`${Math.sin(a)*d}px`);el.appendChild(s);window.setTimeout(()=>s.remove(),900)}onSparkle();setTaps(n=>n+1)};
+ return <div className="wish-celebration" data-phase={phase}><div className="wish-tap-layer" ref={layer} onPointerDown={tap} aria-hidden="true"/>{t>=FLAME_OUT&&<div className="wish-bloom" aria-hidden="true"/>}{t>=FLAME_OUT&&!reduced&&<div className="wish-orb" aria-hidden="true"><span/><span/><span/></div>}{t>=2.5&&!reduced&&<div className="wish-burst" aria-hidden="true"/>}{t>=2.6&&!reduced&&<div className="wish-lanterns" aria-hidden="true">{LANTERNS.map(([left,delay,dur,size],i)=><span key={i} style={{left:`${left}%`,animationDelay:`${delay}s`,animationDuration:`${dur}s`,width:size,height:size}}/>)}</div>}{t>=FLAME_OUT+.3&&<p className="wish-eyebrow">✨ Your wish is on its way ✨</p>}<div className="wish-caption" role="status">{phase==='extinguishing'?<BirthdayCompanion variant={out?'wish':'clap'} size={60} message={out?'Shh… a little breath, a big wish… 🕯️':'Yay! Your wish is safe with the stars 🤫'} celebrate={!out}/>:<><h2 className="wish-message" aria-label="Every little sparkle is for you">{t>=3.2&&WORDS.map((w,i)=><span key={i} aria-hidden="true" style={{'--i':i} as CSSProperties}>{w}</span>)}</h2>{t>=3.6&&<p className="wish-sub">…and every single wish, too 💫</p>}{celebrationT>=DATE_FORMED&&<button type="button" className="wish-continue" onClick={onContinue}>Continue exploring <MoveRight size={16}/></button>}{t>=2.6&&!reduced&&<p className="wish-tip">{taps>0?'More sparkles, just for you ✨':'Tap anywhere for more sparkles ✨'}</p>}</>}</div></div>;
+}
