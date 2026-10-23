@@ -82,6 +82,7 @@ export class Soundscape {
  private once(id:string,play:()=>void){if(this.seen.has(id))return;this.seen.add(id);if(this.unlocked&&!this.muted&&!this.micActive)play()}
  private chord(notes:number[],volume=.028){notes.forEach((n,i)=>this.note(n,2.8,volume,.12*i,this.music))}
  sparkle(){if(!this.unlocked||this.muted||this.micActive)return;[1046.5,1318.51,1567.98,2093].forEach((f,i)=>this.note(f,.8,.028,i*.06))}
+ starNote(step:number){const G4=392,A4=440,B4=493.88,C5=523.25,D5=587.33,E5=659.25,F5=698.46,G5=783.99,C6=1046.5,L:number[][]=[[G4,G4,A4,G4,C5,B4],[G4,G4,A4,G4,D5,C5],[G4,G4,G5,E5,C5,B4,A4],[F5,F5,E5,C5,D5,C5]],T=[0,.2,.3,.6,.9,1.2,1.5];if(step<4)L[step].forEach((f,i)=>this.note(f,i===L[step].length-1?1.1:.45,.026,T[i]));else if(step===4)[C5,E5,G5,C6].forEach((f,i)=>this.note(f,1.2,.022,i*.14));else this.chord([C5,E5,G5,C6],.014)}
  endingSoft=false;
  setEndingSoft(soft:boolean){this.endingSoft=soft}
  ding(i=0){if(!this.unlocked||this.muted||this.micActive)return;this.note(1046.5+i*110,.45,.03);this.note(1567.98+i*110,.35,.018,.05)}
