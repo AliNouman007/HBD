@@ -71,7 +71,7 @@ async function drawCard(name:string,date:string,signature:string){
 // Polaroids for "Today's little moments". text = front caption, back = note on the back.
 function momentsFor(s:Stats){
   const stars=s.loveTaps;
-  const hug={teddy:{icon:'🧸',text:'Got an amateur hug (it still counts)',back:'Teddy has been practising ever since 🧸'},kitten:{icon:'🐱',text:'Got a professional hug',back:'The kitten would like a 5-star review ⭐'},both:{icon:'🤗',text:'Took both hugs. Fair enough 😄',back:'Teddy and the kitten are rivals now 🧸🐱'},declined:{icon:'😼',text:'Politely declined a hug',back:'The kitten is still recovering 😼'}};
+  const hug={teddy:{icon:'🧸',text:'Shared a birthday hug with me',back:'A little moment to keep close 💗'},kitten:{icon:'🐱',text:'Got a birthday hug from the kitten',back:'The kitten is still smiling 🐾'},both:{icon:'🤗',text:'Took both hugs. Fair enough 😄',back:'Teddy and the kitten are rivals now 🧸🐱'},declined:{icon:'😼',text:'Politely declined a hug',back:'The kitten is still recovering 😼'}};
   return [
     {icon:'🚪',text:'You stepped into your birthday room',back:'The fairy lights were waiting just for you ✨'},
     {icon:'🕯️',text:s.usedMic?'Blew out the candles with a real breath 🌬️':'Made a wish (with a tap, we’ll allow it 😌)',back:'Your wish is still a secret. I didn’t peek 🤫'},
@@ -178,7 +178,7 @@ export default function EndingExperience({content,reduced,stats,sound,onSoft,onP
   // iPhone: share sheet → "Save Image" puts it in Photos. Android/desktop: direct download (shows in gallery / Downloads).
   const saveCard=async()=>{const blob=cardBlob.current;if(!blob||saving)return;setSaving(true);try{const name=`${content.recipientName}-birthday-card.png`,file=new File([blob],name,{type:'image/png'});const ios=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);if(ios&&navigator.canShare?.({files:[file]})){try{await navigator.share({files:[file],title:'My birthday card'});setSaved(true)}catch(e){if((e as Error).name!=='AbortError'){download(blob,name);setSaved(true)}}return}download(blob,name);setSaved(true)}finally{setSaving(false)}};
   const replyHref=REPLY_NUMBER?`https://wa.me/${REPLY_NUMBER}?text=${encodeURIComponent(REPLY_TEXT)}`:`https://wa.me/?text=${encodeURIComponent(REPLY_TEXT)}`;
-  const psLine=stats.hugChoice==='kitten'?'P.S. The kitten says he’s available for hugs anytime. Bookings open 🐱':stats.hugChoice==='teddy'?'P.S. Teddy is still practising his hugs. Results next birthday 🧸':stats.hugChoice==='both'?'P.S. Teddy and the kitten are still arguing over who hugs better 🧸🐱':stats.hugChoice==='declined'?'P.S. The kitten has forgiven you. Mostly. 😼':'P.S. The kitten is still waiting to give you that hug 🐱';
+  const psLine=stats.hugChoice==='kitten'?'P.S. The kitten says he’s available for hugs anytime. Bookings open 🐱':stats.hugChoice==='teddy'?'P.S. Thank you for the hug. I’m keeping that little moment close. 💗':stats.hugChoice==='both'?'P.S. Teddy and the kitten are still arguing over who hugs better 🧸🐱':stats.hugChoice==='declined'?'P.S. The kitten has forgiven you. Mostly. 😼':'P.S. The kitten is still waiting to give you that hug 🐱';
 
   const lineIndex=goodbye<3.3?0:goodbye<6.6?1:2;
   const buttonEmoji:EmojiKey=tier>=5?'starstruck':tier>=3?'partying':'party';
